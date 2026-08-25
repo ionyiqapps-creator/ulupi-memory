@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 3
+mentions: 8
 ---
 
 ## Facts
@@ -25,16 +25,22 @@ mentions: 3
 - [[Angels]]
 - [[Andhra]]
 - [[Aakash]]
-- [[Education]]
-- [[Career]]
+- [[Gopal|Gopal]]
+- [[Gopal]]
 
 ## Evidence
 
-> My name is [[Niranjan]]. I studied in [[Little]] [[Angels]] [[Public]] [[School]] in [[Chullakiur]], [[Andhra]] [[Pradesh]], [[Nellore]] district. I did intermediate +1 and +2 in [[Aakash]]. Engineering at [[Kalasalingam]] [[University]], [[Madurai]]. Currently I am working in a UPS company through co
-— [[personal/profile.md|open source]]
+> [[Konduru]] is the [[Family]] village of sir [[Niranjan]] — their own village.
+— [[personal/konduru.md|open source]]
 
-> ## [[Education]] - [[Niranjan]] studied at [[Little]] [[Angels]] [[Public]] [[School]], [[Chullakiur]], [[Nellore]] district, [[Andhra]] [[Pradesh]]. - [[Niranjan]] did his intermediate (+1 and +2) at [[Aakash]]. - [[Niranjan]] completed his engineering at [[Kalasalingam]] [[University]], [[Madurai]].
-— [[people/niranjan.md|open source]]
+> ## [[Family]] here - [[gopal|Gopal]] (father) farms here. - [[Family]] home of [[Niranjan]], son of [[gopal|Gopal]] and [[bhavani|Bhavani]].
+— [[personal/konduru.md|open source]]
 
-> ## [[Career]] - [[Niranjan]] currently works at a UPS company, placed through college placement.
-— [[people/niranjan.md|open source]]
+> [[Rakshitha]] is sir [[Niranjan]]'s own sister.
+— [[people/rakshitha.md|open source]]
+
+> [[Bhavani]] is sir [[Niranjan]]'s mother.
+— [[people/bhavani.md|open source]]
+
+> [[Gopal]] is sir [[Niranjan]]'s father.
+— [[people/gopal.md|open source]]

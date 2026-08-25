@@ -1,4 +1,4 @@
-Konduru is the family village of sir Niranjan — their own village.
+Turn offKonduru is the family village of sir Niranjan — their own village.
 
 ## Family here
 - [[gopal|Gopal]] (father) farms here.
