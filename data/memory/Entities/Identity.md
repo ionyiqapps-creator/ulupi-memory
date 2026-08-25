@@ -1,6 +1,6 @@
 ---
 entity: Identity
-mentions: 1
+mentions: 2
 ---
 
 ## Connections

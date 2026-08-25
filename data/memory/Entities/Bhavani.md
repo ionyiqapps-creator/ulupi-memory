@@ -1,6 +1,6 @@
 ---
 entity: Bhavani
-mentions: 9
+mentions: 10
 ---
 
 ## Facts
@@ -16,18 +16,18 @@ mentions: 9
 
 - [[Gopal]]
 - [[Family]]
+- [[Sumalatha]]
 - [[September]]
+- [[Rakshitha]]
 - [[Personal]]
 - [[Niranjan]]
-- [[Gopal|Gopal]]
-- [[Bhavani|Bhavani]]
-- [[Sumalatha]]
-- [[Rakshitha]]
 - [[Never]]
 - [[Mohan]]
 - [[Memory]]
-- [[Interests]]
+- [[Gopal|Gopal]]
 - [[Facts]]
+- [[Chintu]]
+- [[Bhavani|Bhavani]]
 
 ## Evidence
 

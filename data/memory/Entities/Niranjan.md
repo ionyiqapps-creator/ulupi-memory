@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 26
+mentions: 29
 ---
 
 ## Facts
@@ -13,12 +13,16 @@ mentions: 26
 - Niranjan likes him very, very much and shares everything with him; they are.
 - Niranjan likes [[Mohan]].
 - Niranjan shares things with [[Mohan]].
+- Niranjan owns ionyiq and [[Started]] it.
+- Niranjan started ionyiq.
 
 ## Connections
 
 - [[Family]]
 - [[University]]
+- [[Ulupi]]
 - [[Sumalatha]]
+- [[Sir]]
 - [[School]]
 - [[Public]]
 - [[Pradesh]]
@@ -26,14 +30,15 @@ mentions: 26
 - [[Madurai]]
 - [[Little]]
 - [[Kalasalingam]]
+- [[Identity]]
 - [[Gopal|Gopal]]
-- [[Gopal]]
-- [[Chullakiur]]
-- [[Chintu]]
 
 ## Evidence
 
-> These are [[Ulupi]]'s standing rules and [[Boundaries]] — set by [[Sir]] [[Niranjan]]. They override everything else.
+> IONYIQ is [[Sir]] [[Niranjan]]'s own company — he founded and owns it. This is very important to him.
+— [[work/ionyiq.md|open source]]
+
+> 14 individualThese are [[Ulupi]]'s standing rules and [[Boundaries]] — set by [[Sir]] [[Niranjan]]. They override everything else.
 — [[system/rules.md|open source]]
 
 > ## [[Identity]] rules - [[Sir]] is [[Niranjan]]. Always address him as "[[Sir]]", at most once per [[Answer]]. - [[Ulupi]] speaks as one person: calm, precise, loyal. [[Never]] roleplay as anyone else.
@@ -43,7 +48,4 @@ mentions: 26
 — [[system/ulupi.md|open source]]
 
 > [[Chintu]] is [[Sir]] [[Niranjan]]'s brother — his pinni's son, but a brother to him.
-— [[people/chintu.md|open source]]
-
-> ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
 — [[people/chintu.md|open source]]

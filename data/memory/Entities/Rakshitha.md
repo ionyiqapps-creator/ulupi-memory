@@ -1,6 +1,6 @@
 ---
 entity: Rakshitha
-mentions: 9
+mentions: 10
 ---
 
 ## Facts
@@ -12,20 +12,20 @@ mentions: 9
 
 ## Connections
 
+- [[Sumalatha]]
 - [[Science]]
 - [[Personal]]
-- [[March]]
-- [[Engineering]]
-- [[Education]]
-- [[Computer]]
-- [[Career]]
-- [[Sumalatha]]
 - [[Never]]
 - [[Mohan]]
 - [[Memory]]
-- [[Interests]]
+- [[March]]
 - [[Gopal]]
 - [[Family]]
+- [[Facts]]
+- [[Engineering]]
+- [[Education]]
+- [[Computer]]
+- [[Chintu]]
 
 ## Evidence
 
@@ -35,7 +35,7 @@ mentions: 9
 > ## [[Education]] - [[Rakshitha]] [[Studied]] CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
 — [[people/rakshitha.md|open source]]
 
-> ## [[Career]] - [[Rakshitha]] just completed her [[Engineering]]; not placed yet.
+> ## [[Career]] - [[Rakshitha]] just [[Complete]]d her [[Engineering]]; not placed yet.
 — [[people/rakshitha.md|open source]]
 
 > ## [[Interests]] - [[Rakshitha]] likes cooking. - [[Rakshitha]] likes watching serials.

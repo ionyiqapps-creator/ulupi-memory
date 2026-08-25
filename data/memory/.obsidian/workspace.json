@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/rules.md",
+                "file": "people/rakshitha.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "rules"
+              "title": "rakshitha"
             }
           }
         ]
@@ -187,6 +187,9 @@
   },
   "active": "b7492bdd1ba52acb",
   "lastOpenFiles": [
+    "work/ionyiq.md",
+    "people/sumalatha.md",
+    "system/rules.md",
     "system/ulupi.md",
     "Entities/Politics.md",
     "Entities/Boundaries.md",
@@ -196,8 +199,6 @@
     "Entities/Never.md",
     "Entities/Sir.md",
     "Entities/Identity.md",
-    "system/rules.md",
-    "people/sumalatha.md",
     "Entities/Repo.md",
     "Entities/Warm.md",
     "Entities/Performance.md",
@@ -212,7 +213,6 @@
     "Entities/Guard.md",
     "Entities/Facts.md",
     "Entities/Entities.md",
-    "Entities/Chat.md",
     "system"
   ]
 }

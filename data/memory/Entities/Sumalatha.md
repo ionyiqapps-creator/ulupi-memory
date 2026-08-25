@@ -1,6 +1,6 @@
 ---
 entity: Sumalatha
-mentions: 4
+mentions: 5
 ---
 
 ## Facts
@@ -11,15 +11,15 @@ mentions: 4
 
 - [[Family]]
 - [[Chintu]]
-- [[Niranjan]]
 - [[Rakshitha]]
+- [[Niranjan]]
 - [[Never]]
 - [[Mohan]]
 - [[Memory]]
 - [[Gopal]]
 - [[Facts]]
-- [[Chintu|Chintu]]
 - [[Bhavani]]
+- [[Chintu|Chintu]]
 
 ## Evidence
 

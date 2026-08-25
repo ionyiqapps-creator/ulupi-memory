@@ -1,24 +1,24 @@
 ---
 entity: Memory
-mentions: 2
+mentions: 3
 ---
 
 ## Connections
 
-- [[Wired]]
-- [[Tree]]
 - [[Sumalatha]]
-- [[Studied]]
-- [[Started]]
 - [[Rakshitha]]
-- [[Python]]
 - [[Never]]
 - [[Mohan]]
 - [[Gopal]]
 - [[Family]]
 - [[Facts]]
-- [[Desktop]]
-- [[Created]]
+- [[Chintu]]
+- [[Bhavani]]
+- [[Wired]]
+- [[Tree]]
+- [[Studied]]
+- [[Started]]
+- [[Python]]
 
 ## Evidence
 

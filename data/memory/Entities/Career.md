@@ -10,7 +10,7 @@ mentions: 3
 
 ## Evidence
 
-> ## [[Career]] - [[Rakshitha]] just completed her [[Engineering]]; not placed yet.
+> ## [[Career]] - [[Rakshitha]] just [[Complete]]d her [[Engineering]]; not placed yet.
 — [[people/rakshitha.md|open source]]
 
 > ## [[Career]] - [[Niranjan]] currently works at a UPS company, placed through college placement.

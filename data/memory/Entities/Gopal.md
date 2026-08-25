@@ -1,6 +1,6 @@
 ---
 entity: Gopal
-mentions: 6
+mentions: 7
 ---
 
 ## Facts
@@ -14,18 +14,18 @@ mentions: 6
 
 - [[Family]]
 - [[Bhavani]]
-- [[Niranjan]]
-- [[Konduru]]
-- [[Gopal|Gopal]]
-- [[Bhavani|Bhavani]]
 - [[Sumalatha]]
 - [[Rakshitha]]
-- [[Personal]]
+- [[Niranjan]]
 - [[Never]]
 - [[Mohan]]
 - [[Memory]]
+- [[Konduru]]
+- [[Gopal|Gopal]]
 - [[Facts]]
 - [[Chintu]]
+- [[Bhavani|Bhavani]]
+- [[Personal]]
 
 ## Evidence
 
