@@ -1,6 +1,6 @@
 ---
 entity: University
-mentions: 2
+mentions: 3
 ---
 
 ## Connections
@@ -17,9 +17,13 @@ mentions: 2
 - [[Angels]]
 - [[Andhra]]
 - [[Aakash]]
-- [[Education]]
+- [[Vikas]]
+- [[Vidya]]
 
 ## Evidence
+
+> ## About - [[Chintu]] lives in [[Vidhyanagar]]. - [[Chintu]] studied at [[Sree]] [[Vidya]] [[Vikas]]. - [[Chintu]] just completed his +1 and +2. - [[Chintu]] is going to join [[Danish]] [[University]] next.
+— [[people/chintu.md|open source]]
 
 > My name is [[Niranjan]]. I studied in [[Little]] [[Angels]] [[Public]] [[School]] in [[Chullakiur]], [[Andhra]] [[Pradesh]], [[Nellore]] district. I did intermediate +1 and +2 in [[Aakash]]. [[Engineering]] at [[Kalasalingam]] [[University]], [[Madurai]]. Currently I am working in a UPS company through co
 — [[personal/profile.md|open source]]

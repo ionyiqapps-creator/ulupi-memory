@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 15
+mentions: 21
 ---
 
 ## Facts
@@ -11,11 +11,12 @@ mentions: 15
 - Niranjan works_at a ups company.
 - Niranjan was_placed_through college placement.
 - Niranjan likes him very, very much and shares everything with him; they are.
-- Niranjan likes mohan.
-- Niranjan shares things with mohan.
+- Niranjan likes [[Mohan]].
+- Niranjan shares things with [[Mohan]].
 
 ## Connections
 
+- [[Family]]
 - [[University]]
 - [[School]]
 - [[Public]]
@@ -26,24 +27,23 @@ mentions: 15
 - [[Kalasalingam]]
 - [[Gopal|Gopal]]
 - [[Gopal]]
-- [[Family]]
 - [[Chullakiur]]
 - [[Bhavani|Bhavani]]
 - [[Bhavani]]
 
 ## Evidence
 
-> [[Bhavani]] is sir [[Niranjan]]'s mother.
-— [[people/bhavani.md|open source]]
+> [[Sumalatha]] is sir [[Niranjan]]'s pinni (aunt).
+— [[people/sumalatha.md|open source]]
 
-> [[Rakshitha]] is sir [[Niranjan]]'s own sister.
-— [[people/rakshitha.md|open source]]
+> [[Chintu]] is sir [[Niranjan]]'s cousin — his pinni's (aunt's) son, like a brother to him.
+— [[people/chintu.md|open source]]
 
-> [[Gopal]] is sir [[Niranjan]]'s father.
-— [[people/gopal.md|open source]]
+> ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
+— [[people/chintu.md|open source]]
 
-> Turn off[[Konduru]] is the [[Family]] village of sir [[Niranjan]] — their own village.
-— [[personal/konduru.md|open source]]
+> [[Mohan]] is sir [[Niranjan]]'s uncle — one of the people [[Niranjan]] loves and trusts the most. [[Niranjan]] likes him very, very much and shares everything with him; they are very close.
+— [[people/mohan.md|open source]]
 
-> ## [[Family]] here - [[gopal|Gopal]] (father) farms here. - [[Family]] home of [[Niranjan]], son of [[gopal|Gopal]] and [[bhavani|Bhavani]].
-— [[personal/konduru.md|open source]]
+> ## About - [[Mohan]] is [[Niranjan]]'s uncle. - [[Mohan]] is around 40 years old. - [[Mohan]] works as a mechanical piping engineer in the [[Netherlands]]. - [[Mohan]] worked very hard to get where he is.
+— [[people/mohan.md|open source]]
