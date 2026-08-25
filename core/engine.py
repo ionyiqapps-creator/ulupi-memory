@@ -614,7 +614,7 @@ def stats():
 
 # ---------------------------------------------------------------- obsidian vault
 
-VAULT = ROOT.parent / "om-memory-vault"
+VAULT = STORE  # brain mirror lives inside the memory folder itself
 
 
 def _title(name):
@@ -650,8 +650,7 @@ def export_vault(con=None):
         con = db()
         sync(con)
     VAULT.mkdir(parents=True, exist_ok=True)
-    for sub in ("People", "Projects", "Sources", "Entities"):
-        (VAULT / sub).mkdir(exist_ok=True)
+    (VAULT / "Entities").mkdir(exist_ok=True)
 
     ents = {r["name"]: r["count"] for r in con.execute("SELECT name, count FROM entities")}
     edges = [(r["a"], r["b"], r["w"]) for r in con.execute("SELECT a,b,w FROM edges")]
@@ -679,76 +678,12 @@ def export_vault(con=None):
             if snip in seen:
                 continue
             seen.add(snip)
-            src = f"[[Sources/{Path(r['path']).with_suffix('.md')}|{r['path']}]]"
+            src = f"[[{r['path']}|open source]]"
             out.append((snip, src))
         return out
 
     written = 0
     known_ents = sorted(ents, key=len, reverse=True)
-
-    # ---- People / Project pages grouped from data/memory structure
-    for r in con.execute("SELECT DISTINCT path FROM chunks ORDER BY path"):
-        rel = Path(r["path"])
-        parts = rel.parts
-        chunks = con.execute("SELECT body, kind, entities FROM chunks WHERE path=? ORDER BY id",
-                             (rel.as_posix(),)).fetchall()
-        if not chunks:
-            continue
-        stem = _title(rel.stem)
-        category = "Projects" if parts[0] == "work" else ("People" if parts[0] == "people" else "Sources")
-        lines = ["---", f"type: {category.lower()}", f"source: {rel.as_posix()}",
-                 f"updated: {time.strftime('%Y-%m-%d', time.gmtime(max(c and 0 or 0 for c in [0]) ) ) if False else ''}", "---", ""]
-        # fact box
-        key = rel.stem.lower()
-        if key in facts:
-            lines += ["## Facts", ""]
-            for pr, ob in dict.fromkeys(facts[key]):
-                lines.append(f"- **{key.capitalize()}** {pr} {_wikify(ob, known_ents)}.")
-            lines += [""]
-        if category != "Sources":
-            lines += ["## Recent Notes", ""]
-            seen_para = set()
-            shown = 0
-            for c in chunks:   # newest first
-                body = " ".join(c["body"].split())
-                if body in seen_para or len(body) < 15 or shown >= 15:
-                    continue
-                seen_para.add(body)
-                shown += 1
-                lines.append(f"- {_wikify(body[:280], known_ents)}")
-            if len(seen_para) > 15:
-                lines += ["", f"_{len(seen_para) - 15} older entries in [[Sources/{rel.with_suffix('.md')}|full source]]_"]
-            lines += [""]
-            # connections
-            conn = {}
-            for c in chunks:
-                for e2 in json.loads(c["entities"] or "[]"):
-                    conn[e2] = conn.get(e2, 0) + 1
-            related = [(w2, e2) for e2, w2 in conn.items() if e2 != key and e2 in ents]
-            for w2, nb in sorted(nbrs.get(key, []), reverse=True)[:8]:
-                related.append((w2 * 10, nb))
-            if related:
-                lines += ["## Connected", ""]
-                seen_e = set()
-                for _, e2 in sorted(set(related), reverse=True)[:20]:
-                    if e2 in ents and e2 not in seen_e:
-                        seen_e.add(e2)
-                        lines.append(f"- [[{_title(e2)}]]")
-                    elif (VAULT / "Sources" / rel.with_suffix(".md").name).exists():
-                        pass
-                lines += [""]
-        else:
-            lines += ["## Memory", ""]
-            seen_para = set()
-            for c in chunks:
-                body = " ".join(c["body"].split())
-                if body in seen_para:
-                    continue
-                seen_para.add(body)
-                lines += [f"({c['kind']}) {_wikify(body, known_ents)}", ""]
-        out = VAULT / category / f"{stem}.md"
-        out.write_text("\n".join(lines))
-        written += 1
 
     # ---- Entity hub notes
     for e, count in ents.items():
@@ -787,12 +722,10 @@ def export_vault(con=None):
     moc += [f"- [[{_title(pp)}]]" for pp in projects]
     moc += ["", "## 🔗 Hub Entities", ""]
     moc += [f"- [[{_title(e)}]] ({n})" for e, n in top[:25]]
-    moc += ["", "## 📄 All Sources", ""]
+    moc += ["", "## 📄 All Notes", ""]
     for r in con.execute("SELECT DISTINCT path FROM chunks ORDER BY path"):
         rel = Path(r["path"])
-        stem = _title(rel.stem)
-        cat = "Projects" if rel.parts[0] == "work" else ("People" if rel.parts[0] == "people" else "Sources")
-        moc.append(f"- [[{cat}/{stem}|{rel.as_posix()}]]")
+        moc.append(f"- [[{rel.with_suffix('').as_posix()}|{rel.as_posix()}]]")
     (VAULT / "Brain.md").write_text("\n".join(moc))
     written += 1
 
