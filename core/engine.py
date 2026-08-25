@@ -454,7 +454,9 @@ def store_facts(con, text, source):
     return n
 
 
-FAMILY_ALIASES = {"mother": "bhavani", "father": "gopal", "sister": "rakshitha", "sir": "niranjan"}
+FAMILY_ALIASES = {"mother": "bhavani", "father": "gopal", "sister": "rakshitha",
+                  "uncle": "mohan", "pinni": "sumalatha", "brother": "chintu", "sir": "niranjan",
+                  "company": "ionyiq", "startup": "ionyiq"}
 
 
 def _expand_family(toks):
