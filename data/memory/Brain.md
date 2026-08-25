@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_98 entities · 392 connections · 225 mentions · 60 facts_
+_109 entities · 448 connections · 268 mentions · 63 facts_
 
 ## 👤 People
 
@@ -19,10 +19,11 @@ _98 entities · 392 connections · 225 mentions · 60 facts_
 ## 📁 Projects
 
 - [[Ionyiq]]
+- [[Ups Job]]
 
 ## 🔗 Hub Entities
 
-- [[Niranjan]] (29)
+- [[Niranjan]] (32)
 - [[Bhavani]] (10)
 - [[Rakshitha]] (10)
 - [[Family]] (8)
@@ -32,9 +33,10 @@ _98 entities · 392 connections · 225 mentions · 60 facts_
 - [[Sumalatha]] (5)
 - [[Ulupi]] (5)
 - [[University]] (4)
+- [[Science]] (4)
+- [[Complete]] (4)
 - [[Education]] (3)
 - [[Career]] (3)
-- [[Science]] (3)
 - [[Mohan]] (3)
 - [[Memory]] (3)
 - [[Facts]] (3)
@@ -46,7 +48,6 @@ _98 entities · 392 connections · 225 mentions · 60 facts_
 - [[Little]] (2)
 - [[Madurai]] (2)
 - [[Nellore]] (2)
-- [[Pradesh]] (2)
 
 ## 📄 All Notes
 
@@ -62,3 +63,4 @@ _98 entities · 392 connections · 225 mentions · 60 facts_
 - [[system/rules|system/rules.md]]
 - [[system/ulupi|system/ulupi.md]]
 - [[work/ionyiq|work/ionyiq.md]]
+- [[work/ups-job|work/ups-job.md]]

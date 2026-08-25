@@ -11,10 +11,14 @@
             "id": "b7492bdd1ba52acb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "work/ionyiq.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ionyiq"
             }
           }
         ]
@@ -183,6 +187,7 @@
   },
   "active": "b7492bdd1ba52acb",
   "lastOpenFiles": [
+    "work/ups-job.md",
     "people/rakshitha.md",
     "Entities/Students.md",
     "Entities/Contact.md",
@@ -208,7 +213,6 @@
     "Entities/Academic.md",
     "work/ionyiq.md",
     "people/sumalatha.md",
-    "system/rules.md",
     "system"
   ]
 }

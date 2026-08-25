@@ -1,6 +1,6 @@
 ---
 entity: Services
-mentions: 1
+mentions: 2
 ---
 
 ## Connections

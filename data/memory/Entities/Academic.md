@@ -1,6 +1,6 @@
 ---
 entity: Academic
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
@@ -10,8 +10,9 @@ mentions: 1
 - [[Tagline]]
 - [[Software]]
 - [[Simplicity]]
+- [[Niranjan]]
 
 ## Evidence
 
-> ## What it is - [[[[Web]]site]]: www.ionyiq.com - [[Tagline]]: "[[Simplicity]] in [[Software]]" — final year projects, [[Engineering]] excellence, graduate with confidence. - [[Academic]] CS projects at unbeatable prices; no other company offers this value. - [[Trusted]] by 500+ st
+> ## What it is - IONYIQ is [[Niranjan]]'s freelancing venture — his side hustle alongside his UPS job, and his dream. - [[[[Web]]site]]: www.ionyiq.com - [[Tagline]]: "[[Simplicity]] in [[Software]]" — final year projects, [[Engineering]] excellence, graduate with confidence. - 
 — [[work/ionyiq.md|open source]]

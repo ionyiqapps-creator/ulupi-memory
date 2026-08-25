@@ -1,22 +1,22 @@
 ---
 entity: Science
-mentions: 3
+mentions: 4
 ---
 
 ## Connections
 
-- [[Rakshitha]]
-- [[Engineering]]
-- [[Education]]
-- [[Computer]]
 - [[Web]]
 - [[Services]]
+- [[Rakshitha]]
 - [[Mobile]]
 - [[Machine]]
 - [[Learning]]
 - [[Jupyter]]
+- [[Engineering]]
+- [[Education]]
 - [[Development]]
 - [[Data]]
+- [[Computer]]
 - [[Apps]]
 
 ## Evidence

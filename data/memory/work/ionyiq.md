@@ -1,6 +1,7 @@
 IONYIQ is sir Niranjan's own company — he founded and owns it. This is very important to him.
 
 ## What it is
+- IONYIQ is Niranjan's freelancing venture — his side hustle alongside his UPS job, and his dream.
 - Website: www.ionyiq.com
 - Tagline: "Simplicity in Software" — final year projects, engineering excellence, graduate with confidence.
 - Academic CS projects at unbeatable prices; no other company offers this value.

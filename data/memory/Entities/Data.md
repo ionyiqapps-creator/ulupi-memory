@@ -1,6 +1,6 @@
 ---
 entity: Data
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
