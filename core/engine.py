@@ -428,8 +428,13 @@ def store_facts(con, text, source):
     """Regex fast path; gemma4 fallback when regex finds nothing (memGraph-quality understanding).
     Conflict rule: same subject+predicate with new object -> supersede old."""
     triples = extract_facts(text)
-    if not triples:
-        triples = llm_extract_facts(text)
+    if len(triples) < 3:
+        # regex is cheap but shallow — let gemma4 catch the rest, merge, dedupe
+        seen = set(triples)
+        for tri in llm_extract_facts(text):
+            if tri not in seen:
+                seen.add(tri)
+                triples.append(tri)
     n = 0
     now = time.time()
     for s, p, o in triples:

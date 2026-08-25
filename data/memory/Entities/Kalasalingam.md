@@ -1,5 +1,5 @@
 ---
-entity: Pradesh
+entity: Kalasalingam
 mentions: 2
 ---
 
@@ -8,11 +8,11 @@ mentions: 2
 - [[University]]
 - [[School]]
 - [[Public]]
+- [[Pradesh]]
 - [[Niranjan]]
 - [[Nellore]]
 - [[Madurai]]
 - [[Little]]
-- [[Kalasalingam]]
 - [[Chullakiur]]
 - [[Angels]]
 - [[Andhra]]

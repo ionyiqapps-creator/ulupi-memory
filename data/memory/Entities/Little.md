@@ -1,5 +1,5 @@
 ---
-entity: Pradesh
+entity: Little
 mentions: 2
 ---
 
@@ -8,10 +8,10 @@ mentions: 2
 - [[University]]
 - [[School]]
 - [[Public]]
+- [[Pradesh]]
 - [[Niranjan]]
 - [[Nellore]]
 - [[Madurai]]
-- [[Little]]
 - [[Kalasalingam]]
 - [[Chullakiur]]
 - [[Angels]]

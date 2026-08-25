@@ -1,5 +1,5 @@
 ---
-entity: Pradesh
+entity: Public
 mentions: 2
 ---
 
@@ -7,7 +7,7 @@ mentions: 2
 
 - [[University]]
 - [[School]]
-- [[Public]]
+- [[Pradesh]]
 - [[Niranjan]]
 - [[Nellore]]
 - [[Madurai]]

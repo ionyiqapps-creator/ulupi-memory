@@ -1,13 +1,13 @@
 ---
-entity: Pradesh
+entity: School
 mentions: 2
 ---
 
 ## Connections
 
 - [[University]]
-- [[School]]
 - [[Public]]
+- [[Pradesh]]
 - [[Niranjan]]
 - [[Nellore]]
 - [[Madurai]]

@@ -1,5 +1,5 @@
 ---
-entity: Pradesh
+entity: Aakash
 mentions: 2
 ---
 
@@ -8,6 +8,7 @@ mentions: 2
 - [[University]]
 - [[School]]
 - [[Public]]
+- [[Pradesh]]
 - [[Niranjan]]
 - [[Nellore]]
 - [[Madurai]]
@@ -16,7 +17,6 @@ mentions: 2
 - [[Chullakiur]]
 - [[Angels]]
 - [[Andhra]]
-- [[Aakash]]
 - [[Education]]
 
 ## Evidence

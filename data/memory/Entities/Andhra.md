@@ -1,22 +1,28 @@
 ---
 entity: Andhra
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
 
-- [[Telugu]]
-- [[Teja]]
-- [[Teachers]]
-- [[Shiva]]
-- [[Ravi]]
+- [[University]]
+- [[School]]
+- [[Public]]
 - [[Pradesh]]
-- [[Nirvana]]
-- [[Irumudi]]
-- [[Federation]]
-- [[August]]
+- [[Niranjan]]
+- [[Nellore]]
+- [[Madurai]]
+- [[Little]]
+- [[Kalasalingam]]
+- [[Chullakiur]]
+- [[Angels]]
+- [[Aakash]]
+- [[Education]]
 
 ## Evidence
 
-> [[Ravi]] [[Teja]]'s latest [[Telugu]] film, [[Irumudi]], was released on [[August]] 21, 2026. Directed by [[Shiva]] [[Nirvana]], the action drama has garnered positive reviews, with audiences praising its emotional depth and [[Ravi]] [[Teja]]'s perfor[[Man]]ce. The film has also achieved s
-— [[inbox/which telugu movie of ravitaje released.md|open source]]
+> My name is [[Niranjan]]. I studied in [[Little]] [[Angels]] [[Public]] [[School]] in [[Chullakiur]], [[Andhra]] [[Pradesh]], [[Nellore]] district. I did intermediate +1 and +2 in [[Aakash]]. Engineering at [[Kalasalingam]] [[University]], [[Madurai]]. Currently I am working in a UPS company through co
+— [[personal/profile.md|open source]]
+
+> ## [[Education]] - [[Niranjan]] studied at [[Little]] [[Angels]] [[Public]] [[School]], [[Chullakiur]], [[Nellore]] district, [[Andhra]] [[Pradesh]]. - [[Niranjan]] did his intermediate (+1 and +2) at [[Aakash]]. - [[Niranjan]] completed his engineering at [[Kalasalingam]] [[University]], [[Madurai]].
+— [[people/niranjan.md|open source]]

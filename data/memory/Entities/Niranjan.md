@@ -1,14 +1,22 @@
 ---
-entity: Pradesh
-mentions: 2
+entity: Niranjan
+mentions: 3
 ---
+
+## Facts
+
+- Niranjan studied_at [[Little]] [[Angels]] [[Public]] [[School]].
+- Niranjan did_intermediate_at [[Aakash]].
+- Niranjan completed_engineering_at [[Kalasalingam]] [[University]].
+- Niranjan works_at a ups company.
+- Niranjan was_placed_through college placement.
 
 ## Connections
 
 - [[University]]
 - [[School]]
 - [[Public]]
-- [[Niranjan]]
+- [[Pradesh]]
 - [[Nellore]]
 - [[Madurai]]
 - [[Little]]
@@ -18,6 +26,7 @@ mentions: 2
 - [[Andhra]]
 - [[Aakash]]
 - [[Education]]
+- [[Career]]
 
 ## Evidence
 
@@ -25,4 +34,7 @@ mentions: 2
 — [[personal/profile.md|open source]]
 
 > ## [[Education]] - [[Niranjan]] studied at [[Little]] [[Angels]] [[Public]] [[School]], [[Chullakiur]], [[Nellore]] district, [[Andhra]] [[Pradesh]]. - [[Niranjan]] did his intermediate (+1 and +2) at [[Aakash]]. - [[Niranjan]] completed his engineering at [[Kalasalingam]] [[University]], [[Madurai]].
+— [[people/niranjan.md|open source]]
+
+> ## [[Career]] - [[Niranjan]] currently works at a UPS company, placed through college placement.
 — [[people/niranjan.md|open source]]
