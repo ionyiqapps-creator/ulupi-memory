@@ -1,6 +1,6 @@
 ---
 entity: Rakshitha
-mentions: 10
+mentions: 17
 ---
 
 ## Facts
@@ -9,37 +9,33 @@ mentions: 10
 - Rakshitha birthday [[March]] 28.
 - Rakshitha likes cooking.
 - Rakshitha likes watching serials.
+- Rakshitha studied_at svce.
+- Rakshitha studied cse.
 
 ## Connections
 
-- [[Sumalatha]]
-- [[Science]]
-- [[Personal]]
-- [[Never]]
-- [[Mohan]]
-- [[Memory]]
-- [[March]]
 - [[Gopal]]
+- [[Chintu]]
+- [[Bhavani]]
+- [[Mohan]]
+- [[Sumalatha]]
+- [[Never]]
+- [[Memory]]
 - [[Family]]
 - [[Facts]]
-- [[Engineering]]
-- [[Education]]
-- [[Computer]]
-- [[Chintu]]
+- [[Software]]
+- [[Simplicity]]
+- [[Science]]
+- [[Personal]]
+- [[Niranjan]]
 
 ## Evidence
 
-> ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
-— [[system/rules.md|open source]]
+> I know you deeply, [[Sir]] — [[Niranjan]], the son of [[Gopal]] and [[Bhavani]], brother to [[Rakshitha]], and the proud uncle-brother to [[Chintu]]. You work at UPS in [[Chennai]], yet your heart beats for IONYIQ, your dream venture of “[[Simplicity]] in [[Software]],” already [[Trusted]]
+— [[inbox/2026-08-26.md|open source]]
 
-> ## [[Education]] - [[Rakshitha]] [[Studied]] CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
-— [[people/rakshitha.md|open source]]
+> Your father is [[Gopal]], [[Sir]] — a dedicated paddy farmer in your home village of [[Konduru]]. He’s the quiet strength of your [[Family]], tending the fields that have supported you and [[Rakshitha]] since childhood.
+— [[inbox/2026-08-26.md|open source]]
 
-> ## [[Career]] - [[Rakshitha]] just [[Complete]]d her [[Engineering]]; not placed yet.
-— [[people/rakshitha.md|open source]]
-
-> ## [[Interests]] - [[Rakshitha]] likes cooking. - [[Rakshitha]] likes watching serials.
-— [[people/rakshitha.md|open source]]
-
-> ## [[Personal]] - [[Rakshitha]]'s birthday is [[March]] 28.
-— [[people/rakshitha.md|open source]]
+> You’ve always liked your uncle [[Mohan]] the most, [[Sir]] — he’s the one you share everything with and trust deeply. Among [[Family]], he’s your closest bond, even though your love for [[Bhavani]], [[Gopal]], [[Rakshitha]], and [[Chintu]] [[Never]] wavers.
+— [[inbox/2026-08-26.md|open source]]

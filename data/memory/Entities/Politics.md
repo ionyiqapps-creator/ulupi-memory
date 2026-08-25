@@ -1,6 +1,6 @@
 ---
 entity: Politics
-mentions: 2
+mentions: 3
 ---
 
 ## Connections

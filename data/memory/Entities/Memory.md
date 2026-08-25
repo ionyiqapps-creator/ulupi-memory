@@ -1,6 +1,6 @@
 ---
 entity: Memory
-mentions: 3
+mentions: 4
 ---
 
 ## Connections

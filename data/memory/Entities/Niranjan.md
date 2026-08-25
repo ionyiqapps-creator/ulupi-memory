@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 33
+mentions: 41
 ---
 
 ## Facts
@@ -18,37 +18,39 @@ mentions: 33
 - Niranjan works as [[Associate]] [[Full]] [[Stack]] [[Developer]].
 - Niranjan works in [[Chennai]].
 - Niranjan works at ups.
+- Niranjan tested [[Ulupi]] speed.
+- Niranjan is the son of [[Gopal]].
+- Niranjan is the brother of [[Rakshitha]].
+- Niranjan is associated with ionyiq.
+- Niranjan is related to [[Chintu]].
+- Niranjan played cricket.
+- Niranjan played_with [[Chintu]].
+- Niranjan played_in [[Konduru]].
 
 ## Connections
 
+- [[Gopal]]
+- [[Chintu]]
+- [[Sir]]
 - [[Family]]
-- [[University]]
+- [[Chennai]]
+- [[Bhavani]]
 - [[Ulupi]]
+- [[Software]]
+- [[Simplicity]]
+- [[Identity]]
+- [[Vidhyanagar]]
+- [[University]]
 - [[Sumalatha]]
 - [[Stack]]
-- [[Sir]]
-- [[School]]
-- [[Public]]
-- [[Pradesh]]
-- [[Nellore]]
-- [[Madurai]]
-- [[Little]]
-- [[Kalasalingam]]
-- [[Identity]]
 
 ## Evidence
 
-> [[Sir]] [[Niranjan]]'s current job — working as an [[Associate]] [[Full]] [[Stack]] [[Developer]] at UPS ([[United]] [[Parcel]] [[Service]]) in [[Chennai]], placed through college placement.
-— [[work/ups-job.md|open source]]
+> ### 00:37 — [[Niranjan|Sir]] asked: daily [[Note]] test [[Niranjan|Sir]] and [[Chintu]] played cricket with [[Gopal]] in [[Konduru]].
+— [[inbox/2026-08-26.md|open source]]
 
-> IONYIQ is [[Sir]] [[Niranjan]]'s own [[Company]] — he founded and owns it. This is very important to him.
-— [[work/ionyiq.md|open source]]
+> [[Chintu]] and [[Niranjan]] played cricket in [[Vidhyanagar]].
+— [[inbox/2026-08-26.md|open source]]
 
-> ## What it is - IONYIQ is [[Niranjan]]'s freelancing venture — his side hustle alongside his UPS job, and his dream. - [[[[Web]]site]]: www.ionyiq.com - [[Tagline]]: "[[Simplicity]] in [[Software]]" — final year projects, [[Engineering]] excellence, graduate with confidence. - 
-— [[work/ionyiq.md|open source]]
-
-> 14 individualThese are [[Ulupi]]'s standing rules and [[Boundaries]] — set by [[Sir]] [[Niranjan]]. They override everything else.
-— [[system/rules.md|open source]]
-
-> ## [[Identity]] rules - [[Sir]] is [[Niranjan]]. Always address him as "[[Sir]]", at most once per [[Answer]]. - [[Ulupi]] speaks as one person: calm, precise, loyal. [[Never]] [[Role]]play as anyone else.
-— [[system/rules.md|open source]]
+> I know you deeply, [[Sir]] — [[Niranjan]], the son of [[Gopal]] and [[Bhavani]], brother to [[Rakshitha]], and the proud uncle-brother to [[Chintu]]. You work at UPS in [[Chennai]], yet your heart beats for IONYIQ, your dream venture of “[[Simplicity]] in [[Software]],” already [[Trusted]]
+— [[inbox/2026-08-26.md|open source]]

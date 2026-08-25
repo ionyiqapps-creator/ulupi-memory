@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_112 entities · 484 connections · 293 mentions · 71 facts_
+_117 entities · 529 connections · 400 mentions · 129 facts_
 
 ## 👤 People
 
@@ -23,35 +23,46 @@ _112 entities · 484 connections · 293 mentions · 71 facts_
 
 ## 🔗 Hub Entities
 
-- [[Niranjan]] (33)
-- [[Bhavani]] (10)
-- [[Rakshitha]] (10)
-- [[Family]] (8)
-- [[Gopal]] (7)
-- [[Chintu]] (7)
+- [[Niranjan]] (41)
+- [[Rakshitha]] (17)
+- [[Gopal]] (16)
+- [[Bhavani]] (15)
+- [[Chintu]] (14)
+- [[Family]] (9)
+- [[Sumalatha]] (8)
+- [[Mohan]] (8)
+- [[Simplicity]] (8)
+- [[Software]] (8)
+- [[Ulupi]] (7)
+- [[University]] (6)
+- [[Konduru]] (6)
+- [[Vidhyanagar]] (6)
+- [[Chennai]] (6)
 - [[Personal]] (5)
-- [[Sumalatha]] (5)
-- [[Ulupi]] (5)
-- [[University]] (4)
+- [[Sir]] (5)
 - [[Science]] (4)
+- [[Danish]] (4)
+- [[Sree]] (4)
+- [[Vidya]] (4)
+- [[Vikas]] (4)
+- [[Memory]] (4)
+- [[Facts]] (4)
 - [[Complete]] (4)
-- [[Associate]] (4)
-- [[Chennai]] (4)
-- [[Developer]] (4)
-- [[Full]] (4)
-- [[Stack]] (4)
-- [[Education]] (3)
-- [[Career]] (3)
-- [[Mohan]] (3)
-- [[Memory]] (3)
-- [[Facts]] (3)
-- [[Simplicity]] (3)
-- [[Software]] (3)
-- [[Aakash]] (2)
 
 ## 📄 All Notes
 
+- [[inbox/2026-08-26|inbox/2026-08-26.md]]
+- [[inbox/i love you|inbox/i love you.md]]
+- [[inbox/in opur histiry cvhat istiry did i asked|inbox/in opur histiry cvhat istiry did i asked.md]]
+- [[inbox/link test|inbox/link test.md]]
+- [[inbox/speed test|inbox/speed test.md]]
+- [[inbox/what is ionyiq in one line and why it is|inbox/what is ionyiq in one line and why it is.md]]
 - [[inbox/what is my dream|inbox/what is my dream.md]]
+- [[inbox/what u know baout me and m,y dear ulpi w|inbox/what u know baout me and m,y dear ulpi w.md]]
+- [[inbox/who is chintu|inbox/who is chintu.md]]
+- [[inbox/who is my father|inbox/who is my father.md]]
+- [[inbox/who is sampurneshbabu|inbox/who is sampurneshbabu.md]]
+- [[inbox/whom i like more|inbox/whom i like more.md]]
 - [[people/bhavani|people/bhavani.md]]
 - [[people/chintu|people/chintu.md]]
 - [[people/gopal|people/gopal.md]]

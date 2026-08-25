@@ -1,6 +1,6 @@
 ---
 entity: Bhavani
-mentions: 10
+mentions: 15
 ---
 
 ## Facts
@@ -15,33 +15,27 @@ mentions: 10
 ## Connections
 
 - [[Gopal]]
-- [[Family]]
-- [[Sumalatha]]
-- [[September]]
 - [[Rakshitha]]
-- [[Personal]]
-- [[Niranjan]]
-- [[Never]]
-- [[Mohan]]
-- [[Memory]]
-- [[Gopal|Gopal]]
-- [[Facts]]
 - [[Chintu]]
-- [[Bhavani|Bhavani]]
+- [[Mohan]]
+- [[Family]]
+- [[Niranjan]]
+- [[Sumalatha]]
+- [[Never]]
+- [[Memory]]
+- [[Facts]]
+- [[Software]]
+- [[Simplicity]]
+- [[September]]
+- [[Personal]]
 
 ## Evidence
 
+> I know you deeply, [[Sir]] — [[Niranjan]], the son of [[Gopal]] and [[Bhavani]], brother to [[Rakshitha]], and the proud uncle-brother to [[Chintu]]. You work at UPS in [[Chennai]], yet your heart beats for IONYIQ, your dream venture of “[[Simplicity]] in [[Software]],” already [[Trusted]]
+— [[inbox/2026-08-26.md|open source]]
+
+> You’ve always liked your uncle [[Mohan]] the most, [[Sir]] — he’s the one you share everything with and trust deeply. Among [[Family]], he’s your closest bond, even though your love for [[Bhavani]], [[Gopal]], [[Rakshitha]], and [[Chintu]] [[Never]] wavers.
+— [[inbox/2026-08-26.md|open source]]
+
 > ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
 — [[system/rules.md|open source]]
-
-> ## About - [[Bhavani]] is a housewife. - [[Bhavani]] is very active.
-— [[people/bhavani.md|open source]]
-
-> ## [[Interests]] - [[Bhavani]] likes stitching and tailoring. - [[Bhavani]] likes talking.
-— [[people/bhavani.md|open source]]
-
-> ## [[Personal]] - [[Bhavani]] is around 43 years old. - [[Bhavani]]'s birthday is [[September]] 16.
-— [[people/bhavani.md|open source]]
-
-> ## [[Family]] here - [[gopal|Gopal]] (father) farms here. - [[Family]] home of [[Niranjan]], son of [[gopal|Gopal]] and [[bhavani|Bhavani]].
-— [[personal/konduru.md|open source]]

@@ -1,6 +1,6 @@
 ---
 entity: Response
-mentions: 2
+mentions: 3
 ---
 
 ## Connections

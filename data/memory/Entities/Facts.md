@@ -1,6 +1,6 @@
 ---
 entity: Facts
-mentions: 3
+mentions: 4
 ---
 
 ## Connections

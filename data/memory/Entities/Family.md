@@ -1,15 +1,19 @@
 ---
 entity: Family
-mentions: 8
+mentions: 9
 ---
+
+## Facts
+
+- Family is known [[Sir]].
 
 ## Connections
 
 - [[Sumalatha]]
 - [[Chintu]]
-- [[Niranjan]]
 - [[Gopal]]
 - [[Bhavani]]
+- [[Niranjan]]
 - [[Facts]]
 - [[Rakshitha]]
 - [[Never]]

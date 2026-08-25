@@ -1,6 +1,6 @@
 ---
 entity: Answer
-mentions: 2
+mentions: 3
 ---
 
 ## Connections
