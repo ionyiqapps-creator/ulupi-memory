@@ -24,7 +24,7 @@ STORE = ROOT / "data" / "memory"
 DB = ROOT / "index.db"
 
 DIM = 256
-BUDGET_CHARS = 4000  # recall() context ceiling
+BUDGET_CHARS = 5000  # recall() context ceiling
 
 MODES = {
     "balanced":    {"kw": 1.0, "vec": 1.0, "graph": 0.8, "fresh": 0.5},
@@ -253,7 +253,7 @@ def sync(con):
 def s_keyword(con, query_toks):
     if not query_toks:
         return {}
-    q = " OR ".join(f'"{t}"' for t in query_toks)
+    q = " OR ".join(f'"{t}"*' for t in query_toks)  # prefix match: study -> studied
     try:
         rows = con.execute("SELECT rowid, bm25(fts) AS r FROM fts WHERE fts MATCH ? LIMIT 100", (q,)).fetchall()
     except Exception:
@@ -595,8 +595,8 @@ def recall(query, mode="balanced", budget=BUDGET_CHARS):
     # standing rules ride along with EVERY recall
     rules_file = STORE / "system" / "rules.md"
     if rules_file.exists():
-        lines.append(rules_file.read_text()[:1200])
-        used += 1200  # reserve headroom; rules are non-negotiable
+        lines.append(rules_file.read_text()[:500])
+        used += 500  # compact; memory chunks matter more
     facts = query_facts(con, _expand_family(toks))
     if facts:
         block = "FACTS:\n" + "\n".join(f"- {f['subject'].capitalize()} {f['predicate']} {f['object']}" for f in facts)
@@ -604,7 +604,7 @@ def recall(query, mode="balanced", budget=BUDGET_CHARS):
     turns = recent_history(con, n=4)
     if turns:
         block = "RECENT CHAT:\n" + "\n".join(f"{'USER' if r['role']=='user' else 'ULUPI'}: {r['content'][:200]}" for r in turns)
-        if used + len(block) < budget // 2:
+        if used + len(block) < int(budget * 0.35):
             lines.append(block); used += len(block)
     hits = search_history(con, query, limit=3)
     if hits and not any(h["content"][:60] == turns[-1]["content"][:60] for h in hits if turns):
