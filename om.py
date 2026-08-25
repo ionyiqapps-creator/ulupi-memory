@@ -17,6 +17,12 @@ from core import engine
 MODES = ",".join(engine.MODES)
 
 
+def _vault():
+    con = engine.db()
+    print(f"exported {engine.export_vault(con)} notes -> {engine.VAULT}")
+    con.close()
+
+
 def main():
     a = sys.argv[1:]
     if not a:
@@ -40,6 +46,8 @@ def main():
         con = engine.db(); print(f"indexed {engine.sync(con)} file(s)"); con.close()
     elif cmd == "rebuild":
         con = engine.db(); engine.rebuild(con); con.close(); print("rebuilt")
+    elif cmd == "vault":
+        _vault()
     elif cmd == "stats":
         print(json.dumps(engine.stats(), indent=2))
     elif cmd == "demo":
@@ -95,3 +103,8 @@ def demo():
 
 if __name__ == "__main__":
     main()
+
+def _vault():
+    con = engine.db()
+    print(f"exported {engine.export_vault(con)} notes -> {engine.VAULT}")
+    con.close()
