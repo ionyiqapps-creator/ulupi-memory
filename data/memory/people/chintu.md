@@ -1,4 +1,4 @@
-Chintu is sir Niranjan's cousin — his pinni's (aunt's) son, like a brother to him.
+Chintu is sir Niranjan's brother — his pinni's son, but a brother to him.
 
 ## About
 - Chintu lives in Vidhyanagar.

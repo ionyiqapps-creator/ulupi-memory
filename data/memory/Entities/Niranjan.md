@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 21
+mentions: 23
 ---
 
 ## Facts
@@ -18,6 +18,7 @@ mentions: 21
 
 - [[Family]]
 - [[University]]
+- [[Sumalatha]]
 - [[School]]
 - [[Public]]
 - [[Pradesh]]
@@ -28,19 +29,18 @@ mentions: 21
 - [[Gopal|Gopal]]
 - [[Gopal]]
 - [[Chullakiur]]
-- [[Bhavani|Bhavani]]
-- [[Bhavani]]
+- [[Chintu]]
 
 ## Evidence
 
-> [[Sumalatha]] is sir [[Niranjan]]'s pinni (aunt).
-— [[people/sumalatha.md|open source]]
-
-> [[Chintu]] is sir [[Niranjan]]'s cousin — his pinni's (aunt's) son, like a brother to him.
+> [[Chintu]] is sir [[Niranjan]]'s brother — his pinni's son, but a brother to him.
 — [[people/chintu.md|open source]]
 
 > ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
 — [[people/chintu.md|open source]]
+
+> [[Sumalatha]] is sir [[Niranjan]]'s pinni (aunt).
+— [[people/sumalatha.md|open source]]
 
 > [[Mohan]] is sir [[Niranjan]]'s uncle — one of the people [[Niranjan]] loves and trusts the most. [[Niranjan]] likes him very, very much and shares everything with him; they are very close.
 — [[people/mohan.md|open source]]

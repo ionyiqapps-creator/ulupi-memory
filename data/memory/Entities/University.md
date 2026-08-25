@@ -1,10 +1,14 @@
 ---
 entity: University
-mentions: 3
+mentions: 4
 ---
 
 ## Connections
 
+- [[Vikas]]
+- [[Vidya]]
+- [[Vidhyanagar]]
+- [[Sree]]
 - [[School]]
 - [[Public]]
 - [[Pradesh]]
@@ -13,12 +17,8 @@ mentions: 3
 - [[Madurai]]
 - [[Little]]
 - [[Kalasalingam]]
+- [[Danish]]
 - [[Chullakiur]]
-- [[Angels]]
-- [[Andhra]]
-- [[Aakash]]
-- [[Vikas]]
-- [[Vidya]]
 
 ## Evidence
 

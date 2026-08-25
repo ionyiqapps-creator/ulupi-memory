@@ -1,7 +1,11 @@
 ---
 entity: Sumalatha
-mentions: 2
+mentions: 3
 ---
+
+## Facts
+
+- Sumalatha is mother of [[Chintu]].
 
 ## Connections
 
@@ -12,8 +16,8 @@ mentions: 2
 
 ## Evidence
 
-> ## [[Family]] - [[Sumalatha]]'s son is [[chintu|Chintu]].
-— [[people/sumalatha.md|open source]]
-
 > ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
 — [[people/chintu.md|open source]]
+
+> ## [[Family]] - [[Sumalatha]]'s son is [[chintu|Chintu]].
+— [[people/sumalatha.md|open source]]

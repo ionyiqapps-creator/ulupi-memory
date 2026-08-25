@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_40 entities · 161 connections · 114 mentions · 34 facts_
+_40 entities · 161 connections · 126 mentions · 40 facts_
 
 ## 👤 People
 
@@ -21,16 +21,17 @@ _40 entities · 161 connections · 114 mentions · 34 facts_
 
 ## 🔗 Hub Entities
 
-- [[Niranjan]] (21)
+- [[Niranjan]] (23)
 - [[Bhavani]] (8)
 - [[Rakshitha]] (8)
+- [[Family]] (5)
 - [[Gopal]] (5)
 - [[Personal]] (5)
-- [[Family]] (4)
-- [[University]] (3)
+- [[Chintu]] (5)
+- [[University]] (4)
 - [[Education]] (3)
 - [[Career]] (3)
-- [[Chintu]] (3)
+- [[Sumalatha]] (3)
 - [[Aakash]] (2)
 - [[Andhra]] (2)
 - [[Angels]] (2)
@@ -45,7 +46,6 @@ _40 entities · 161 connections · 114 mentions · 34 facts_
 - [[Bhavani|Bhavani]] (2)
 - [[Gopal|Gopal]] (2)
 - [[Konduru]] (2)
-- [[Computer]] (2)
 
 ## 📄 All Notes
 
