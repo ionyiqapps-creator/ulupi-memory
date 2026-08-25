@@ -233,7 +233,8 @@ def index_file(con, path):
 def rebuild(con):
     n = 0
     for md in STORE.rglob("*.md"):
-        md.parent.mkdir(parents=True, exist_ok=True)
+        if md.parts[-2] == "Entities" or md.name == "Brain.md":
+            continue  # vault mirror notes are not memories
         n += index_file(con, md)
     return n
 
@@ -736,3 +737,10 @@ def export_vault(con=None):
 
 if __name__ == "__main__":
     print(f"exported {export_vault()} notes to {VAULT}")
+
+
+def _purge_vault_chunks(con):
+    for r in con.execute("SELECT id FROM chunks WHERE path LIKE 'Entities/%' OR path='Brain.md'").fetchall():
+        con.execute("DELETE FROM fts WHERE rowid=?", (r["id"],))
+    con.execute("DELETE FROM chunks WHERE path LIKE 'Entities/%' OR path='Brain.md'")
+    con.commit()

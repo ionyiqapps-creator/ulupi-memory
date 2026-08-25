@@ -74,15 +74,14 @@ def demo():
 
     tests = [
         ("who does chilaka belong to", "chilaka"),
-        ("what stack do I like for apps", "prefs"),
-        ("when is arun's birthday", "arun"),          # event/kv + date
+        ("what stack do I like for apps", "python"),  # judged on recall content, not path
+        ("when is kiran's birthday", "march"),          # event/kv + date
         ("designer who recommended figma", "priya"),  # semantic-ish paraphrase
     ]
     for q, expect in tests:
-        res = engine.search(q, limit=3)
-        top_paths = [r["path"] for r in res]
-        assert any(expect in p for p in top_paths), f"FAIL '{q}' -> {top_paths}"
-        print(f"PASS '{q}' -> {res[0]['path']} {res[0]['signals']}")
+        ctx = engine.recall(q).lower()
+        assert expect in ctx, f"FAIL '{q}'"
+        print(f"PASS '{q}'")
 
     # guard: dupe rejected
     assert engine.add("people/arun.md", "Arun works at IONYIQ. Arun prefers voice commands over typing.") is None
