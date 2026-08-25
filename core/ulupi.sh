@@ -26,6 +26,8 @@ emit() {
 # announce() removed — was speaking on every step ("searching my memory, sir")
 announce() { :; }
 
+echo "$1" > /tmp/ulupi-last-q.txt 2>/dev/null
+
 if [ "$1" = "add" ]; then
   a="$3"
   case "$a" in
