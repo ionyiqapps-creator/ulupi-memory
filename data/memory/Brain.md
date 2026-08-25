@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_112 entities · 484 connections · 291 mentions · 66 facts_
+_112 entities · 484 connections · 293 mentions · 71 facts_
 
 ## 👤 People
 
@@ -45,12 +45,13 @@ _112 entities · 484 connections · 291 mentions · 66 facts_
 - [[Mohan]] (3)
 - [[Memory]] (3)
 - [[Facts]] (3)
+- [[Simplicity]] (3)
+- [[Software]] (3)
 - [[Aakash]] (2)
-- [[Andhra]] (2)
-- [[Angels]] (2)
 
 ## 📄 All Notes
 
+- [[inbox/what is my dream|inbox/what is my dream.md]]
 - [[people/bhavani|people/bhavani.md]]
 - [[people/chintu|people/chintu.md]]
 - [[people/gopal|people/gopal.md]]
