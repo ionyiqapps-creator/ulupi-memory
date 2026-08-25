@@ -1,14 +1,31 @@
 ---
 entity: Rakshitha
-mentions: 1
+mentions: 4
 ---
 
 ## Facts
 
-- Rakshitha completed engineering.
-- Rakshitha birthday march 28.
+- Rakshitha completed [[Engineering]].
+- Rakshitha birthday [[March]] 28.
+- Rakshitha likes watching serials.
+
+## Connections
+
+- [[Science]]
+- [[Personal]]
+- [[March]]
+- [[Engineering]]
+- [[Education]]
+- [[Computer]]
+- [[Career]]
 
 ## Evidence
 
-> ## About - [[Rakshitha]] just completed her engineering.
+> ## [[Education]] - [[Rakshitha]] studied CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
+— [[people/rakshitha.md|open source]]
+
+> ## [[Career]] - [[Rakshitha]] just completed her [[Engineering]]; not placed yet.
+— [[people/rakshitha.md|open source]]
+
+> ## [[Personal]] - [[Rakshitha]]'s birthday is [[March]] 28.
 — [[people/rakshitha.md|open source]]

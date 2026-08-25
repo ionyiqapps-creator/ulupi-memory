@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 8
+mentions: 13
 ---
 
 ## Facts
@@ -21,26 +21,26 @@ mentions: 8
 - [[Madurai]]
 - [[Little]]
 - [[Kalasalingam]]
-- [[Chullakiur]]
-- [[Angels]]
-- [[Andhra]]
-- [[Aakash]]
 - [[Gopal|Gopal]]
 - [[Gopal]]
+- [[Family]]
+- [[Chullakiur]]
+- [[Bhavani|Bhavani]]
+- [[Bhavani]]
 
 ## Evidence
-
-> [[Konduru]] is the [[Family]] village of sir [[Niranjan]] — their own village.
-— [[personal/konduru.md|open source]]
-
-> ## [[Family]] here - [[gopal|Gopal]] (father) farms here. - [[Family]] home of [[Niranjan]], son of [[gopal|Gopal]] and [[bhavani|Bhavani]].
-— [[personal/konduru.md|open source]]
 
 > [[Rakshitha]] is sir [[Niranjan]]'s own sister.
 — [[people/rakshitha.md|open source]]
 
+> [[Gopal]] is sir [[Niranjan]]'s father.
+— [[people/gopal.md|open source]]
+
 > [[Bhavani]] is sir [[Niranjan]]'s mother.
 — [[people/bhavani.md|open source]]
 
-> [[Gopal]] is sir [[Niranjan]]'s father.
-— [[people/gopal.md|open source]]
+> Turn off[[Konduru]] is the [[Family]] village of sir [[Niranjan]] — their own village.
+— [[personal/konduru.md|open source]]
+
+> ## [[Family]] here - [[gopal|Gopal]] (father) farms here. - [[Family]] home of [[Niranjan]], son of [[gopal|Gopal]] and [[bhavani|Bhavani]].
+— [[personal/konduru.md|open source]]

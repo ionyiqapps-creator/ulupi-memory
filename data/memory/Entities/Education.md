@@ -1,12 +1,14 @@
 ---
 entity: Education
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
 
 - [[University]]
+- [[Science]]
 - [[School]]
+- [[Rakshitha]]
 - [[Public]]
 - [[Pradesh]]
 - [[Niranjan]]
@@ -14,12 +16,14 @@ mentions: 1
 - [[Madurai]]
 - [[Little]]
 - [[Kalasalingam]]
+- [[Engineering]]
+- [[Computer]]
 - [[Chullakiur]]
-- [[Angels]]
-- [[Andhra]]
-- [[Aakash]]
 
 ## Evidence
 
-> ## [[Education]] - [[Niranjan]] studied at [[Little]] [[Angels]] [[Public]] [[School]], [[Chullakiur]], [[Nellore]] district, [[Andhra]] [[Pradesh]]. - [[Niranjan]] did his intermediate (+1 and +2) at [[Aakash]]. - [[Niranjan]] completed his engineering at [[Kalasalingam]] [[University]], [[Madurai]].
+> ## [[Education]] - [[Rakshitha]] studied CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
+— [[people/rakshitha.md|open source]]
+
+> ## [[Education]] - [[Niranjan]] studied at [[Little]] [[Angels]] [[Public]] [[School]], [[Chullakiur]], [[Nellore]] district, [[Andhra]] [[Pradesh]]. - [[Niranjan]] did his intermediate (+1 and +2) at [[Aakash]]. - [[Niranjan]] completed his [[Engineering]] at [[Kalasalingam]] [[University]], [[Madurai]].
 — [[people/niranjan.md|open source]]

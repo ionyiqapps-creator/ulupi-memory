@@ -1,6 +1,6 @@
 ---
 entity: Konduru
-mentions: 1
+mentions: 2
 ---
 
 ## Facts
@@ -13,5 +13,5 @@ mentions: 1
 
 ## Evidence
 
-> ## About - [[Gopal]] is a farmer. - [[Gopal]] lives in [[Konduru]], the [[Family]]'s own village.
+> ## About - [[Gopal]] is a farmer. - [[Gopal]] grows paddy. - [[Gopal]] lives in [[Konduru]], the [[Family]]'s own village.
 — [[people/gopal.md|open source]]

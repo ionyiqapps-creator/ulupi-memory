@@ -1,6 +1,6 @@
 ---
 entity: Bhavani|Bhavani
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
