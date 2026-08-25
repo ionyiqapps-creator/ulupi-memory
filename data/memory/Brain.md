@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_40 entities · 161 connections · 126 mentions · 40 facts_
+_68 entities · 275 connections · 158 mentions · 47 facts_
 
 ## 👤 People
 
@@ -21,10 +21,10 @@ _40 entities · 161 connections · 126 mentions · 40 facts_
 
 ## 🔗 Hub Entities
 
-- [[Niranjan]] (23)
+- [[Niranjan]] (24)
 - [[Bhavani]] (8)
 - [[Rakshitha]] (8)
-- [[Family]] (5)
+- [[Family]] (6)
 - [[Gopal]] (5)
 - [[Personal]] (5)
 - [[Chintu]] (5)
@@ -58,3 +58,4 @@ _40 entities · 161 connections · 126 mentions · 40 facts_
 - [[people/sumalatha|people/sumalatha.md]]
 - [[personal/konduru|personal/konduru.md]]
 - [[personal/profile|personal/profile.md]]
+- [[system/ulupi|system/ulupi.md]]

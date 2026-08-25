@@ -1,6 +1,6 @@
 ---
 entity: Family
-mentions: 5
+mentions: 6
 ---
 
 ## Connections
@@ -12,9 +12,18 @@ mentions: 5
 - [[Gopal]]
 - [[Bhavani|Bhavani]]
 - [[Bhavani]]
-- [[Chintu|Chintu]]
+- [[Store]]
+- [[Retrieval]]
+- [[Recall]]
+- [[Ollama]]
+- [[Obsidian]]
+- [[Jaccard]]
+- [[Guard]]
 
 ## Evidence
+
+> ## [[Architecture]] - [[Store]]: markdown files in data/[[Memory]] are source of truth; SQLite index.db is rebuildable. - [[Retrieval]]: hybrid score = BM25 (FTS5) + neural vectors ([[Ollama]] nomic-embed-text) + entity graph walk + freshness + coverage + path boost. - 
+— [[system/ulupi.md|open source]]
 
 > ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
 — [[people/chintu.md|open source]]

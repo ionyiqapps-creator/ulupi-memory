@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 23
+mentions: 24
 ---
 
 ## Facts
@@ -33,6 +33,9 @@ mentions: 23
 
 ## Evidence
 
+> [[Ulupi]] is sir [[Niranjan]]'s [[Personal]] AI assistant — and this [[Memory]] [[Store]] is its [[Brain]]. Sir built it himself with open[[Code]].
+— [[system/ulupi.md|open source]]
+
 > [[Chintu]] is sir [[Niranjan]]'s brother — his pinni's son, but a brother to him.
 — [[people/chintu.md|open source]]
 
@@ -43,7 +46,4 @@ mentions: 23
 — [[people/sumalatha.md|open source]]
 
 > [[Mohan]] is sir [[Niranjan]]'s uncle — one of the people [[Niranjan]] loves and trusts the most. [[Niranjan]] likes him very, very much and shares everything with him; they are very close.
-— [[people/mohan.md|open source]]
-
-> ## About - [[Mohan]] is [[Niranjan]]'s uncle. - [[Mohan]] is around 40 years old. - [[Mohan]] works as a mechanical piping engineer in the [[Netherlands]]. - [[Mohan]] worked very hard to get where he is.
 — [[people/mohan.md|open source]]

@@ -12,5 +12,5 @@ mentions: 2
 
 ## Evidence
 
-> ## [[Education]] - [[Rakshitha]] studied CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
+> ## [[Education]] - [[Rakshitha]] [[Studied]] CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
 — [[people/rakshitha.md|open source]]
