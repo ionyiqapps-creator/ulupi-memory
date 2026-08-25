@@ -175,7 +175,7 @@ def init(con):
     con.executescript("""
     CREATE TABLE IF NOT EXISTS messages(
       id INTEGER PRIMARY KEY, thread TEXT DEFAULT 'default', role TEXT,
-      content TEXT, mtime REAL);
+      content TEXT, source TEXT, mtime REAL);
     CREATE INDEX IF NOT EXISTS idx_msg_thread ON messages(thread, mtime);
     CREATE TABLE IF NOT EXISTS facts(
       id INTEGER PRIMARY KEY, subject TEXT, predicate TEXT, object TEXT,
@@ -337,9 +337,9 @@ _freshcache = None
 
 # ---------------------------------------------------------------- chat history
 
-def log_message(con, thread, role, content):
-    cur = con.execute("INSERT INTO messages(thread,role,content,mtime) VALUES(?,?,?,?)",
-                      (thread, role, content, time.time()))
+def log_message(con, thread, role, content, source=None):
+    cur = con.execute("INSERT INTO messages(thread,role,content,source,mtime) VALUES(?,?,?,?,?)",
+                      (thread, role, content, source, time.time()))
     con.execute("INSERT INTO msg_fts(rowid,content) VALUES(?,?)", (cur.lastrowid, content))
     con.commit()
     return cur.lastrowid
@@ -353,7 +353,7 @@ def search_history(con, query, limit=5, exclude_thread=None):
     q = " OR ".join(f'"{t}"' for t in toks)
     try:
         rows = con.execute(
-            "SELECT m.thread, m.role, m.content, m.mtime FROM msg_fts f "
+            "SELECT m.thread, m.role, m.content, m.mtime, m.source FROM msg_fts f "
             "JOIN messages m ON m.id = f.rowid WHERE msg_fts MATCH ? "
             "ORDER BY m.mtime DESC LIMIT ?", (q, limit)).fetchall()
     except Exception:
@@ -611,7 +611,11 @@ def recall(query, mode="balanced", budget=BUDGET_CHARS):
         seen = {r["content"][:80] for r in turns}
         fresh = [h for h in hits if h["content"][:80] not in seen]
         if fresh:
-            block = "PAST CONVERSATIONS:\n" + "\n".join(f"[{h['mtime']and time.strftime('%Y-%m-%d', time.localtime(h['mtime']))}] {h['role']}: {h['content'][:150]}" for h in fresh)
+            def _fmt(h):
+                d = time.strftime('%Y-%m-%d', time.localtime(h["mtime"]))
+                src = f" -> [[{h['source']}|memory]]" if h["source"] else ""
+                return f"[{d}] {h['role']}: {h['content'][:140]}{src}"
+            block = "PAST CONVERSATIONS:\n" + "\n".join(_fmt(h) for h in fresh)
             if used + len(block) < budget * 0.75:
                 lines.append(block); used += len(block)
     results = search(query, mode=mode, limit=12)

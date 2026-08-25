@@ -67,8 +67,9 @@ class H(BaseHTTPRequestHandler):
         r = engine.add(fname, f"{q}\n\n{a}")
         con = engine.db()
         thread = qs.get("thread", ["default"])[0]
-        engine.log_message(con, thread, "user", q)
-        engine.log_message(con, thread, "ulupi", a[:2000])
+        src = fname if r else None   # dupe -> no new note
+        engine.log_message(con, thread, "user", q, source=src)
+        engine.log_message(con, thread, "ulupi", a[:2000], source=src)
         con.close()
         self._write(b"ok" if r else b"dupe")
 
