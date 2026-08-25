@@ -617,23 +617,48 @@ def stats():
 VAULT = ROOT.parent / "om-memory-vault"
 
 
+def _title(name):
+    return name.replace("-", " ").replace("_", " ").title()
+
+
+def _wikify(text, ents):
+    """Wrap known entities in [[wikilinks]]. Skips text already inside [[...]],
+    longest-first, case-insensitive."""
+    parts = re.split(r"(\[\[[^\]]*\]\])", text)
+    out = []
+    for i, part in enumerate(parts):
+        if part.startswith("[["):
+            out.append(part)
+            continue
+        for e in sorted(ents, key=len, reverse=True):
+            if len(e) >= 3:
+                part = re.sub(re.escape(e), f"[[{_title(e)}]]", part, flags=re.I)
+        out.append(part)
+    return "".join(out)
+
+
 def export_vault(con=None):
-    """Mirror the brain as an Obsidian vault: one note per entity, [[wikilinks]] from
-    co-occurrence edges + facts, MOC index note. Open VAULT folder in Obsidian -> Graph view
-    renders the memory graph. OpenHuman-style: markdown is the mirror, SQLite is the engine."""
+    """Full brain mirror for Obsidian:
+      People/<Name>.md        - fact box + connections + evidence
+      Projects/<Project>.md   - decisions + notes
+      Sources/<path>.md       - full mirrored memory with inline wikilinks
+      <Entity>.md             - hub note per entity
+      Brain.md                - MOC home
+    SQLite stays the engine; the vault is the beautiful, connected mirror."""
     own = con is None
     if own:
         con = db()
         sync(con)
     VAULT.mkdir(parents=True, exist_ok=True)
+    for sub in ("People", "Projects", "Sources", "Entities"):
+        (VAULT / sub).mkdir(exist_ok=True)
 
     ents = {r["name"]: r["count"] for r in con.execute("SELECT name, count FROM entities")}
     edges = [(r["a"], r["b"], r["w"]) for r in con.execute("SELECT a,b,w FROM edges")]
     facts = {}
     for r in con.execute("SELECT subject,predicate,object,mtime FROM facts ORDER BY mtime"):
-        facts.setdefault(r["subject"], []).append(f"{r['subject'].capitalize()} {r['predicate']} {r['object']}.")
+        facts.setdefault(r["subject"], []).append((r["predicate"], r["object"]))
 
-    # neighbors per entity (strongest first)
     nbrs = {e: [] for e in ents}
     for a, b, w in edges:
         if a in nbrs:
@@ -643,63 +668,131 @@ def export_vault(con=None):
     for e in nbrs:
         nbrs[e].sort(reverse=True)
 
-    def title(name):
-        return name.replace("-", " ").title()
-
-    # entity notes
-    written = 0
-    for e, count in ents.items():
-        lines = [f"---", f"entity: {title(e)}", f"mentions: {count}", f"---", ""]
-        if e in facts:
-            lines += ["## Facts", ""]
-            lines += sorted(set(facts[e]))
-            lines += [""]
-        if nbrs[e]:
-            lines += ["## Connections", ""]
-            for _, n in nbrs[e][:12]:
-                lines.append(f"- [[{title(n)}]]")
-            lines += [""]
-        # source excerpts
+    def evidence_for(e, k=5):
         rows = con.execute(
-            "SELECT path, body FROM chunks WHERE entities LIKE ? ORDER BY mtime DESC LIMIT 5",
-            (f'%"{e}"%',)).fetchall()
-        if rows:
-            lines += ["## Evidence", ""]
-            for r in rows:
-                snippet = " ".join(r["body"].split())[:220]
-                lines += [f"> {snippet}", f"— [[{Path(r['path']).stem.title()}|{r['path']}]]", ""]
-        note = VAULT / f"{title(e)}.md"
-        note.write_text("\n".join(lines))
-        written += 1
+            "SELECT path, body FROM chunks WHERE entities LIKE ? ORDER BY mtime DESC LIMIT ?",
+            (f'%"{e}"%', k)).fetchall()
+        out = []
+        seen = set()
+        for r in rows:
+            snip = " ".join(r["body"].split())[:250]
+            if snip in seen:
+                continue
+            seen.add(snip)
+            src = f"[[Sources/{Path(r['path']).with_suffix('.md')}|{r['path']}]]"
+            out.append((snip, src))
+        return out
 
-    # source-file notes (one per md file)
-    for r in con.execute("SELECT DISTINCT path FROM chunks"):
+    written = 0
+    known_ents = sorted(ents, key=len, reverse=True)
+
+    # ---- People / Project pages grouped from data/memory structure
+    for r in con.execute("SELECT DISTINCT path FROM chunks ORDER BY path"):
         rel = Path(r["path"])
-        body_chunks = con.execute(
-            "SELECT body, kind FROM chunks WHERE path=? ORDER BY id", (r["path"],)).fetchall()
-        lines = ["---", f"source: {rel}", "---", ""]
-        for c in body_chunks:
-            # wikilink any entity mentioned in this chunk
-            text = c["body"]
-            for e2 in json.loads(con.execute(
-                    "SELECT entities FROM chunks WHERE path=? AND body=?",
-                    (r["path"], c["body"])).fetchone()[0] or "[]"):
-                text = re.sub(re.escape(e2), f"[[{title(e2)}]]", text, flags=re.I)
-            lines += [f"({c['kind']}) {text}", ""]
-        out = VAULT / "sources" / rel.with_suffix(".md")
-        out.parent.mkdir(parents=True, exist_ok=True)
+        parts = rel.parts
+        chunks = con.execute("SELECT body, kind, entities FROM chunks WHERE path=? ORDER BY id",
+                             (rel.as_posix(),)).fetchall()
+        if not chunks:
+            continue
+        stem = _title(rel.stem)
+        category = "Projects" if parts[0] == "work" else ("People" if parts[0] == "people" else "Sources")
+        lines = ["---", f"type: {category.lower()}", f"source: {rel.as_posix()}",
+                 f"updated: {time.strftime('%Y-%m-%d', time.gmtime(max(c and 0 or 0 for c in [0]) ) ) if False else ''}", "---", ""]
+        # fact box
+        key = rel.stem.lower()
+        if key in facts:
+            lines += ["## Facts", ""]
+            for pr, ob in dict.fromkeys(facts[key]):
+                lines.append(f"- **{key.capitalize()}** {pr} {_wikify(ob, known_ents)}.")
+            lines += [""]
+        if category != "Sources":
+            lines += ["## Recent Notes", ""]
+            seen_para = set()
+            shown = 0
+            for c in chunks:   # newest first
+                body = " ".join(c["body"].split())
+                if body in seen_para or len(body) < 15 or shown >= 15:
+                    continue
+                seen_para.add(body)
+                shown += 1
+                lines.append(f"- {_wikify(body[:280], known_ents)}")
+            if len(seen_para) > 15:
+                lines += ["", f"_{len(seen_para) - 15} older entries in [[Sources/{rel.with_suffix('.md')}|full source]]_"]
+            lines += [""]
+            # connections
+            conn = {}
+            for c in chunks:
+                for e2 in json.loads(c["entities"] or "[]"):
+                    conn[e2] = conn.get(e2, 0) + 1
+            related = [(w2, e2) for e2, w2 in conn.items() if e2 != key and e2 in ents]
+            for w2, nb in sorted(nbrs.get(key, []), reverse=True)[:8]:
+                related.append((w2 * 10, nb))
+            if related:
+                lines += ["## Connected", ""]
+                seen_e = set()
+                for _, e2 in sorted(set(related), reverse=True)[:20]:
+                    if e2 in ents and e2 not in seen_e:
+                        seen_e.add(e2)
+                        lines.append(f"- [[{_title(e2)}]]")
+                    elif (VAULT / "Sources" / rel.with_suffix(".md").name).exists():
+                        pass
+                lines += [""]
+        else:
+            lines += ["## Memory", ""]
+            seen_para = set()
+            for c in chunks:
+                body = " ".join(c["body"].split())
+                if body in seen_para:
+                    continue
+                seen_para.add(body)
+                lines += [f"({c['kind']}) {_wikify(body, known_ents)}", ""]
+        out = VAULT / category / f"{stem}.md"
         out.write_text("\n".join(lines))
         written += 1
 
-    # home / MOC
-    top = sorted(ents.items(), key=lambda kv: -kv[1])[:30]
-    moc = ["---", "title: Brain Index", "---", "",
+    # ---- Entity hub notes
+    for e, count in ents.items():
+        T = _title(e)
+        lines = ["---", f"entity: {T}", f"mentions: {count}", "---", ""]
+        if e in facts:
+            lines += ["## Facts", ""]
+            for pr, ob in dict.fromkeys(facts[e]):
+                lines.append(f"- {e.capitalize()} {pr} {_wikify(ob, known_ents)}.")
+            lines += [""]
+        if nbrs[e]:
+            lines += ["## Connections", ""]
+            lines += [f"- [[{_title(n)}]]" for _, n in nbrs[e][:14]]
+            lines += [""]
+        ev = evidence_for(e)
+        if ev:
+            lines += ["## Evidence", ""]
+            for snip, src in ev:
+                lines += [f"> {_wikify(snip, known_ents)}", f"— {src}", ""]
+        (VAULT / "Entities" / f"{T}.md").write_text("\n".join(lines))
+        written += 1
+
+    # ---- Brain.md (MOC)
+    top = sorted(ents.items(), key=lambda kv: -kv[1])
+    people = sorted({Path(r['path']).stem for r in con.execute(
+        "SELECT DISTINCT path FROM chunks WHERE path LIKE 'people/%'")})
+    projects = sorted({Path(r['path']).stem for r in con.execute(
+        "SELECT DISTINCT path FROM chunks WHERE path LIKE 'work/%'")})
+    moc = ["---", "title: ulupi Brain", "---", "",
            "# 🧠 ulupi Brain", "",
-           "## Hub entities", ""]
-    moc += [f"- [[{title(e)}]] ({n} mentions)" for e, n in top]
-    moc += ["", "## Sources", ""]
+           f"_{len(ents)} entities · {len(edges)} connections · {sum(ents.values())} mentions · "
+           f"{con.execute('SELECT COUNT(*) FROM facts').fetchone()[0]} facts_", "",
+           "## 👤 People", ""]
+    moc += [f"- [[{_title(pp)}]]" for pp in people]
+    moc += ["", "## 📁 Projects", ""]
+    moc += [f"- [[{_title(pp)}]]" for pp in projects]
+    moc += ["", "## 🔗 Hub Entities", ""]
+    moc += [f"- [[{_title(e)}]] ({n})" for e, n in top[:25]]
+    moc += ["", "## 📄 All Sources", ""]
     for r in con.execute("SELECT DISTINCT path FROM chunks ORDER BY path"):
-        moc.append(f"- [[{Path('sources') / Path(r['path']).with_suffix('.md')}|{r['path']}]]")
+        rel = Path(r["path"])
+        stem = _title(rel.stem)
+        cat = "Projects" if rel.parts[0] == "work" else ("People" if rel.parts[0] == "people" else "Sources")
+        moc.append(f"- [[{cat}/{stem}|{rel.as_posix()}]]")
     (VAULT / "Brain.md").write_text("\n".join(moc))
     written += 1
 
