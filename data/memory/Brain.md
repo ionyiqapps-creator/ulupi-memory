@@ -4,7 +4,7 @@ title: ulupi Brain
 
 # 🧠 ulupi Brain
 
-_29 entities · 128 connections · 91 mentions · 23 facts_
+_29 entities · 128 connections · 91 mentions · 31 facts_
 
 ## 👤 People
 

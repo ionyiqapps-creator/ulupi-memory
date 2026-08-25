@@ -8,6 +8,7 @@ mentions: 5
 - Gopal is farmer.
 - Gopal is father of [[Niranjan]].
 - Gopal lives in [[Konduru]], the [[Family]]'s own village.
+- Gopal grows paddy.
 
 ## Connections
 

@@ -10,6 +10,9 @@ mentions: 15
 - Niranjan completed_engineering_at [[Kalasalingam]] [[University]].
 - Niranjan works_at a ups company.
 - Niranjan was_placed_through college placement.
+- Niranjan likes him very, very much and shares everything with him; they are.
+- Niranjan likes mohan.
+- Niranjan shares things with mohan.
 
 ## Connections
 
