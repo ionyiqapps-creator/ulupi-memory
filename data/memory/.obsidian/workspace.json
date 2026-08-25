@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "system/ulupi.md",
+                "file": "system/rules.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ulupi"
+              "title": "rules"
             }
           }
         ]
@@ -187,6 +187,15 @@
   },
   "active": "b7492bdd1ba52acb",
   "lastOpenFiles": [
+    "system/ulupi.md",
+    "Entities/Politics.md",
+    "Entities/Boundaries.md",
+    "Entities/Response.md",
+    "Entities/Blend.md",
+    "Entities/Answer.md",
+    "Entities/Never.md",
+    "Entities/Sir.md",
+    "Entities/Identity.md",
     "system/rules.md",
     "people/sumalatha.md",
     "Entities/Repo.md",
@@ -204,15 +213,6 @@
     "Entities/Facts.md",
     "Entities/Entities.md",
     "Entities/Chat.md",
-    "Entities/Brain.md",
-    "Entities/Architecture.md",
-    "Entities/Wired.md",
-    "Entities/Tree.md",
-    "Entities/Studied.md",
-    "Entities/Started.md",
-    "Entities/Python.md",
-    "Entities/Memory.md",
-    "Entities/Desktop.md",
     "system"
   ]
 }

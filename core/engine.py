@@ -590,6 +590,11 @@ def recall(query, mode="balanced", budget=BUDGET_CHARS):
     con = db()
     toks = _tokens(query)
     lines, used = [], 0
+    # standing rules ride along with EVERY recall
+    rules_file = STORE / "system" / "rules.md"
+    if rules_file.exists():
+        lines.append(rules_file.read_text()[:1200])
+        used += 1200  # reserve headroom; rules are non-negotiable
     facts = query_facts(con, _expand_family(toks))
     if facts:
         block = "FACTS:\n" + "\n".join(f"- {f['subject'].capitalize()} {f['predicate']} {f['object']}" for f in facts)
