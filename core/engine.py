@@ -492,6 +492,11 @@ def add(fname, text, con=None):
             con.close()
         return None  # guard: rejected
     p.parent.mkdir(parents=True, exist_ok=True)
+    # wikify known entities so every new memory connects in the Obsidian graph
+    known = [r["name"] for r in con.execute("SELECT name FROM entities")]
+    if known:
+        text = _wikify(text, known)
+        text = re.sub(r"\[\[niranjan(\|[^\]]*)?\]\]", "[[Niranjan|Sir]]", text, flags=re.I)
     p.write_text((body + "\n\n" if body else "") + text.strip() + "\n")
     p.touch()  # ensure mtime changes even if content identical modulo whitespace
     index_file(con, p)

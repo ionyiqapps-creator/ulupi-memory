@@ -9,6 +9,7 @@
 Usage: python3 core/server.py   (port 8791)
 """
 import json
+import time
 import sys
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -63,8 +64,9 @@ class H(BaseHTTPRequestHandler):
         if not q or not a or a.startswith("/Users/") and a.count("/") > 3:
             self._write(b"skip")  # guard: shortcut handed us a file path, not an answer
             return
-        fname = f"inbox/{q[:40].strip().replace('/', '-').lower() or 'note'}.md"
-        r = engine.add(fname, f"{q}\n\n{a}")
+        fname = f"inbox/{time.strftime('%Y-%m-%d')}.md"  # daily note: one file per day
+        stamp = time.strftime("%H:%M")
+        r = engine.add(fname, f"### {stamp} — [[niranjan|Sir]] asked: {q}\n{a}")
         con = engine.db()
         thread = qs.get("thread", ["default"])[0]
         src = fname if r else None   # dupe -> no new note
