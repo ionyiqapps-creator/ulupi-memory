@@ -1,8 +1,8 @@
-Sir Niranjan's current job — working as an Associate Full Stack Developer at a UPS company in Chennai, placed through college placement.
+Sir Niranjan's current job — working as an Associate Full Stack Developer at UPS (United Parcel Service) in Chennai, placed through college placement.
 
 ## Details
 - Role: Associate Full Stack Developer.
-- Company: UPS (the company he works for).
+- Company: UPS — United Parcel Service, the global package delivery/logistics giant.
 - Location: Chennai.
 - Got the job through college placement.
 

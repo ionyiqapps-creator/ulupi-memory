@@ -1,6 +1,6 @@
 ---
 entity: Location
-mentions: 1
+mentions: 2
 ---
 
 ## Connections
@@ -14,8 +14,11 @@ mentions: 1
 - [[Company]]
 - [[Chennai]]
 - [[Associate]]
+- [[United]]
+- [[Service]]
+- [[Parcel]]
 
 ## Evidence
 
-> ## [[Details]] - [[Role]]: [[Associate]] [[Full]] [[Stack]] [[Developer]]. - [[Company]]: UPS (the [[Company]] he works for). - [[Location]]: [[Chennai]]. - [[Got]] the job through college placement.
+> ## [[Details]] - [[Role]]: [[Associate]] [[Full]] [[Stack]] [[Developer]]. - [[Company]]: UPS — [[United]] [[Parcel]] [[Service]], the global package [[Delivery]]/logistics giant. - [[Location]]: [[Chennai]]. - [[Got]] the job through college placement.
 — [[work/ups-job.md|open source]]

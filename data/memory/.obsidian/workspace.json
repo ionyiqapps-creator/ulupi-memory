@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "work/ionyiq.md",
+                "file": "work/ups-job.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "ionyiq"
+              "title": "ups-job"
             }
           }
         ]
@@ -187,6 +187,7 @@
   },
   "active": "b7492bdd1ba52acb",
   "lastOpenFiles": [
+    "work/ionyiq.md",
     "Entities/Note.md",
     "Entities/Role.md",
     "Entities/Location.md",
@@ -212,7 +213,6 @@
     "Entities/Jupyter.md",
     "Entities/Development.md",
     "Entities/Data.md",
-    "Entities/Apps.md",
     "system"
   ]
 }
