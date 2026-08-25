@@ -1,6 +1,6 @@
 ---
 entity: Gopal
-mentions: 5
+mentions: 6
 ---
 
 ## Facts
@@ -12,15 +12,25 @@ mentions: 5
 
 ## Connections
 
+- [[Family]]
+- [[Bhavani]]
 - [[Niranjan]]
 - [[Konduru]]
 - [[Gopal|Gopal]]
-- [[Family]]
 - [[Bhavani|Bhavani]]
-- [[Bhavani]]
+- [[Sumalatha]]
+- [[Rakshitha]]
 - [[Personal]]
+- [[Never]]
+- [[Mohan]]
+- [[Memory]]
+- [[Facts]]
+- [[Chintu]]
 
 ## Evidence
+
+> ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
+— [[system/rules.md|open source]]
 
 > ## About - [[Gopal]] is a farmer. - [[Gopal]] grows paddy. - [[Gopal]] lives in [[Konduru]], the [[Family]]'s own village.
 — [[people/gopal.md|open source]]

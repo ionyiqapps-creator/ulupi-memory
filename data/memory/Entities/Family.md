@@ -1,26 +1,29 @@
 ---
 entity: Family
-mentions: 6
+mentions: 7
 ---
 
 ## Connections
 
-- [[Niranjan]]
 - [[Sumalatha]]
+- [[Niranjan]]
 - [[Chintu]]
-- [[Gopal|Gopal]]
 - [[Gopal]]
-- [[Bhavani|Bhavani]]
 - [[Bhavani]]
+- [[Gopal|Gopal]]
+- [[Facts]]
+- [[Bhavani|Bhavani]]
 - [[Store]]
 - [[Retrieval]]
 - [[Recall]]
+- [[Rakshitha]]
 - [[Ollama]]
 - [[Obsidian]]
-- [[Jaccard]]
-- [[Guard]]
 
 ## Evidence
+
+> ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
+— [[system/rules.md|open source]]
 
 > ## [[Architecture]] - [[Store]]: markdown files in data/[[Memory]] are source of truth; SQLite index.db is rebuildable. - [[Retrieval]]: hybrid score = BM25 (FTS5) + neural vectors ([[Ollama]] nomic-embed-text) + entity graph walk + freshness + coverage + path boost. - 
 — [[system/ulupi.md|open source]]

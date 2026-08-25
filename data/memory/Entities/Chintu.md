@@ -1,6 +1,6 @@
 ---
 entity: Chintu
-mentions: 5
+mentions: 6
 ---
 
 ## Facts
@@ -23,9 +23,16 @@ mentions: 5
 - [[Sree]]
 - [[Niranjan]]
 - [[Danish]]
-- [[Chintu|Chintu]]
+- [[Rakshitha]]
+- [[Never]]
+- [[Mohan]]
+- [[Memory]]
+- [[Gopal]]
 
 ## Evidence
+
+> ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
+— [[system/rules.md|open source]]
 
 > ## About - [[Chintu]] lives in [[Vidhyanagar]]. - [[Chintu]] [[Studied]] at [[Sree]] [[Vidya]] [[Vikas]]. - [[Chintu]] just completed his +1 and +2. - [[Chintu]] is going to join [[Danish]] [[University]] next.
 — [[people/chintu.md|open source]]

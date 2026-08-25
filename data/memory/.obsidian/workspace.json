@@ -11,10 +11,14 @@
             "id": "b7492bdd1ba52acb",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "system/ulupi.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "ulupi"
             }
           }
         ]
@@ -183,21 +187,32 @@
   },
   "active": "b7492bdd1ba52acb",
   "lastOpenFiles": [
-    "system/ulupi.md",
-    "system",
-    "people/mohan.md",
-    "Entities/Relationship.md",
-    "Entities/Netherlands.md",
-    "Entities/Mohan.md",
-    "Entities/Chintu|Chintu.md",
-    "Entities/Sumalatha.md",
-    "Entities/Vikas.md",
-    "Entities/Vidya.md",
-    "Entities/Vidhyanagar.md",
-    "Entities/Sree.md",
-    "Entities/Danish.md",
-    "Entities/Chintu.md",
+    "system/rules.md",
     "people/sumalatha.md",
-    "people/chintu.md"
+    "Entities/Repo.md",
+    "Entities/Warm.md",
+    "Entities/Performance.md",
+    "Entities/Both.md",
+    "Entities/Code.md",
+    "Entities/Store.md",
+    "Entities/Retrieval.md",
+    "Entities/Recall.md",
+    "Entities/Ollama.md",
+    "Entities/Obsidian.md",
+    "Entities/Jaccard.md",
+    "Entities/Guard.md",
+    "Entities/Facts.md",
+    "Entities/Entities.md",
+    "Entities/Chat.md",
+    "Entities/Brain.md",
+    "Entities/Architecture.md",
+    "Entities/Wired.md",
+    "Entities/Tree.md",
+    "Entities/Studied.md",
+    "Entities/Started.md",
+    "Entities/Python.md",
+    "Entities/Memory.md",
+    "Entities/Desktop.md",
+    "system"
   ]
 }

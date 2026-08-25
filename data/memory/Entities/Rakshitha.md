@@ -1,6 +1,6 @@
 ---
 entity: Rakshitha
-mentions: 8
+mentions: 9
 ---
 
 ## Facts
@@ -19,9 +19,18 @@ mentions: 8
 - [[Education]]
 - [[Computer]]
 - [[Career]]
+- [[Sumalatha]]
+- [[Never]]
+- [[Mohan]]
+- [[Memory]]
 - [[Interests]]
+- [[Gopal]]
+- [[Family]]
 
 ## Evidence
+
+> ## [[Memory]] rules - [[Facts]] in the [[Facts]] block are ground truth — they beat general knowledge, always. - [[Family]] map: mother = [[Bhavani]], father = [[Gopal]], sister = [[Rakshitha]], uncle = [[Mohan]], pinni = [[Sumalatha]], brother = [[Chintu]] (pinni's son). - When [[Sir]] states
+— [[system/rules.md|open source]]
 
 > ## [[Education]] - [[Rakshitha]] [[Studied]] CSE ([[Computer]] [[Science]] and [[Engineering]]) at SVCE.
 — [[people/rakshitha.md|open source]]

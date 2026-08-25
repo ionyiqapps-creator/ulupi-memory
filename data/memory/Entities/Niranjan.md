@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 24
+mentions: 26
 ---
 
 ## Facts
@@ -33,17 +33,17 @@ mentions: 24
 
 ## Evidence
 
-> [[Ulupi]] is sir [[Niranjan]]'s [[Personal]] AI assistant — and this [[Memory]] [[Store]] is its [[Brain]]. Sir built it himself with open[[Code]].
+> These are [[Ulupi]]'s standing rules and [[Boundaries]] — set by [[Sir]] [[Niranjan]]. They override everything else.
+— [[system/rules.md|open source]]
+
+> ## [[Identity]] rules - [[Sir]] is [[Niranjan]]. Always address him as "[[Sir]]", at most once per [[Answer]]. - [[Ulupi]] speaks as one person: calm, precise, loyal. [[Never]] roleplay as anyone else.
+— [[system/rules.md|open source]]
+
+> [[Ulupi]] is [[Sir]] [[Niranjan]]'s [[Personal]] AI assistant — and this [[Memory]] [[Store]] is its [[Brain]]. [[Sir]] built it himself with open[[Code]].
 — [[system/ulupi.md|open source]]
 
-> [[Chintu]] is sir [[Niranjan]]'s brother — his pinni's son, but a brother to him.
+> [[Chintu]] is [[Sir]] [[Niranjan]]'s brother — his pinni's son, but a brother to him.
 — [[people/chintu.md|open source]]
 
 > ## [[Family]] - [[Chintu]]'s mother is [[Sumalatha]] ([[Niranjan]]'s pinni).
 — [[people/chintu.md|open source]]
-
-> [[Sumalatha]] is sir [[Niranjan]]'s pinni (aunt).
-— [[people/sumalatha.md|open source]]
-
-> [[Mohan]] is sir [[Niranjan]]'s uncle — one of the people [[Niranjan]] loves and trusts the most. [[Niranjan]] likes him very, very much and shares everything with him; they are very close.
-— [[people/mohan.md|open source]]
