@@ -1,6 +1,6 @@
 ---
 entity: Personal
-mentions: 3
+mentions: 5
 ---
 
 ## Connections
@@ -8,16 +8,16 @@ mentions: 3
 - [[September]]
 - [[Rakshitha]]
 - [[March]]
-- [[Gopal]]
 - [[Bhavani]]
+- [[Gopal]]
 
 ## Evidence
+
+> ## [[Personal]] - [[Bhavani]] is around 43 years old. - [[Bhavani]]'s birthday is [[September]] 16.
+— [[people/bhavani.md|open source]]
 
 > ## [[Personal]] - [[Rakshitha]]'s birthday is [[March]] 28.
 — [[people/rakshitha.md|open source]]
 
 > ## [[Personal]] - [[Gopal]] is around 55 years old.
 — [[people/gopal.md|open source]]
-
-> ## [[Personal]] - [[Bhavani]] is around 43 years old. - [[Bhavani]]'s birthday is [[September]] 16.
-— [[people/bhavani.md|open source]]

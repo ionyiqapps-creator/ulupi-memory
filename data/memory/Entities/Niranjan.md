@@ -1,6 +1,6 @@
 ---
 entity: Niranjan
-mentions: 13
+mentions: 15
 ---
 
 ## Facts
@@ -30,14 +30,14 @@ mentions: 13
 
 ## Evidence
 
+> [[Bhavani]] is sir [[Niranjan]]'s mother.
+— [[people/bhavani.md|open source]]
+
 > [[Rakshitha]] is sir [[Niranjan]]'s own sister.
 — [[people/rakshitha.md|open source]]
 
 > [[Gopal]] is sir [[Niranjan]]'s father.
 — [[people/gopal.md|open source]]
-
-> [[Bhavani]] is sir [[Niranjan]]'s mother.
-— [[people/bhavani.md|open source]]
 
 > Turn off[[Konduru]] is the [[Family]] village of sir [[Niranjan]] — their own village.
 — [[personal/konduru.md|open source]]

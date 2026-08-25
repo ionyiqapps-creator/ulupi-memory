@@ -444,7 +444,9 @@ def store_facts(con, text, source):
                             (s, p, o)).fetchone()
         if exact:
             continue
-        con.execute("DELETE FROM facts WHERE subject=? AND predicate=? AND object!=?", (s, p, o))
+        # supersede only single-valued predicates; likes/hobbies accumulate
+        if p not in ("likes", "enjoys", "loves", "hobbies", "interested in"):
+            con.execute("DELETE FROM facts WHERE subject=? AND predicate=? AND object!=?", (s, p, o))
         con.execute("INSERT INTO facts(subject,predicate,object,source,mtime) VALUES(?,?,?,?,?)",
                     (s, p, o, source, now))
         n += 1
@@ -452,10 +454,22 @@ def store_facts(con, text, source):
     return n
 
 
+FAMILY_ALIASES = {"mother": "bhavani", "father": "gopal", "sister": "rakshitha", "sir": "niranjan"}
+
+
+def _expand_family(toks):
+    out = set(toks)
+    for t_ in toks:
+        if t_ in FAMILY_ALIASES:
+            out.add(FAMILY_ALIASES[t_])
+    return out
+
+
 def query_facts(con, toks, limit=8):
     """Facts where any query token hits subject/object — exact, instant."""
     if not toks:
         return []
+    toks = sorted(_expand_family(set(toks)))
     like = lambda t: f"%{t}%"
     q = "SELECT subject,predicate,object FROM facts WHERE " + " OR ".join(
         ["subject LIKE ?"] * len(toks) + ["object LIKE ?"] * len(toks))
@@ -576,7 +590,7 @@ def recall(query, mode="balanced", budget=BUDGET_CHARS):
     con = db()
     toks = _tokens(query)
     lines, used = [], 0
-    facts = query_facts(con, toks)
+    facts = query_facts(con, _expand_family(toks))
     if facts:
         block = "FACTS:\n" + "\n".join(f"- {f['subject'].capitalize()} {f['predicate']} {f['object']}" for f in facts)
         lines.append(block); used += len(block)

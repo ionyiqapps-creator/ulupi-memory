@@ -1,14 +1,16 @@
 ---
 entity: Education
-mentions: 2
+mentions: 3
 ---
 
 ## Connections
 
-- [[University]]
 - [[Science]]
-- [[School]]
 - [[Rakshitha]]
+- [[Engineering]]
+- [[Computer]]
+- [[University]]
+- [[School]]
 - [[Public]]
 - [[Pradesh]]
 - [[Niranjan]]
@@ -16,8 +18,6 @@ mentions: 2
 - [[Madurai]]
 - [[Little]]
 - [[Kalasalingam]]
-- [[Engineering]]
-- [[Computer]]
 - [[Chullakiur]]
 
 ## Evidence
