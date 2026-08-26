@@ -1,6 +1,6 @@
 ---
 entity: Sumalatha
-mentions: 8
+mentions: 15
 ---
 
 ## Facts
@@ -11,6 +11,12 @@ mentions: 8
 
 ## Connections
 
+- [[Vikas]]
+- [[Vidya]]
+- [[Vidhyanagar]]
+- [[University]]
+- [[Sree]]
+- [[Danish]]
 - [[Family]]
 - [[Chintu]]
 - [[Rakshitha]]
@@ -19,12 +25,6 @@ mentions: 8
 - [[Memory]]
 - [[Gopal]]
 - [[Facts]]
-- [[Bhavani]]
-- [[Vikas]]
-- [[Vidya]]
-- [[Vidhyanagar]]
-- [[University]]
-- [[Sree]]
 
 ## Evidence
 

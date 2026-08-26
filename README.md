@@ -15,8 +15,8 @@ OpenHuman-tier personal memory + retrieval. Free, local, zero cloud.
 ## Usage
 ```bash
 python3 om.py demo                  # seed + self-check
-python3 om.py add people/arun.md "Arun prefers voice commands"
-python3 om.py search "who owns chilaka" --mode graph_first
+python3 om.py add people/niranjan.md "Niranjan works at IONYIQ"
+python3 om.py search "where does niranjan work" --mode graph_first
 python3 om.py recall "context for my LLM prompt"
 python3 om.py vault                 # refresh Obsidian hub notes
 python3 core/server.py              # daemon on :8792

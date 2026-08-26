@@ -1,6 +1,6 @@
 ---
 entity: Gopal
-mentions: 16
+mentions: 51
 ---
 
 ## Facts
@@ -9,25 +9,26 @@ mentions: 16
 - Gopal grows paddy.
 - Gopal is a paddy farmer.
 - Gopal lives in [[Konduru]].
-- Gopal is quiet strength.
 - Gopal played cricket.
+- Gopal is [[Sir]]'s father.
+- Gopal shaped [[Sir]]'s work ethic.
 
 ## Connections
 
 - [[Rakshitha]]
 - [[Chintu]]
-- [[Bhavani]]
 - [[Niranjan]]
+- [[Bhavani]]
 - [[Konduru]]
-- [[Mohan]]
-- [[Family]]
-- [[Sumalatha]]
-- [[Never]]
-- [[Memory]]
-- [[Facts]]
-- [[Software]]
 - [[Sir]]
+- [[Niranjan|Sir]]
+- [[Mohan]]
+- [[Chennai]]
+- [[Software]]
 - [[Simplicity]]
+- [[Note]]
+- [[Family]]
+- [[Never]]
 
 ## Evidence
 
@@ -40,5 +41,8 @@ mentions: 16
 > Your father is [[Gopal]], [[Sir]] — a dedicated paddy farmer in your home village of [[Konduru]]. He’s the quiet strength of your [[Family]], tending the fields that have supported you and [[Rakshitha]] since childhood.
 — [[inbox/2026-08-26.md|open source]]
 
-> You’ve always liked your uncle [[Mohan]] the most, [[Sir]] — he’s the one you share everything with and trust deeply. Among [[Family]], he’s your closest bond, even though your love for [[Bhavani]], [[Gopal]], [[Rakshitha]], and [[Chintu]] [[Never]] wavers.
+> You’ve always liked your uncle [[Mohan]] the most, [[Sir]] — he’s the one you share everything with and trust deeply. [[Among]] [[Family]], he’s your closest bond, even though your love for [[Bhavani]], [[Gopal]], [[Rakshitha]], and [[Chintu]] [[Never]] wavers.
+— [[inbox/2026-08-26.md|open source]]
+
+> ### 12:25 — [[Niranjan|Sir]] asked: who is my favoutite person Your favorite person is your father, [[Gopal]], [[Sir]] — the steady hand who shaped your work ethic and quiet grit. You carry his values into everything, from your UPS [[Role]] in [[Chen
 — [[inbox/2026-08-26.md|open source]]

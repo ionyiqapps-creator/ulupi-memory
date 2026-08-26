@@ -1,23 +1,18 @@
 ---
-entity: Babu
-mentions: 16
+entity: Sampurnesh
+mentions: 7
 ---
 
 ## Connections
 
 - [[Telugu]]
-- [[Kaleyam]]
-- [[Hrudaya]]
 - [[Sir]]
-- [[Sampurnesh]]
 - [[Performance]]
 - [[Niranjan|Sir]]
 - [[Niranjan]]
+- [[Babu]]
 
 ## Evidence
-
-> [[Sampurnesh]] [[Babu]] is a [[Telugu]] comedy actor, [[Sir]] — famous for his over-the-top [[Role]]s in movies like [[Hrudaya]] [[Kaleyam]]. People love him for his spoof-style [[Performance]]s and unique charm.
-— [[inbox/2026-08-26.md|open source]]
 
 > ### 00:42 — [[Niranjan|Sir]] asked: in oppur histury havce i asekd you aboput any actort i mena comedy actor ?? Yes, [[Sir]] — you once asked me about [[Sampurnesh]] [[Babu]], the [[Telugu]] comedy actor known for his over-the-top, spoof-style [[Performa
 — [[inbox/2026-08-26.md|open source]]

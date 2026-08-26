@@ -1,6 +1,6 @@
 ---
 entity: Vidya
-mentions: 4
+mentions: 11
 ---
 
 ## Connections

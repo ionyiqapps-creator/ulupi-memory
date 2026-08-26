@@ -6,7 +6,7 @@
   GET  /search?q=..   -> JSON results
   POST /add?q=&a=     -> store memory (dupe-guarded)
 
-Usage: python3 core/server.py   (port 8791)
+Usage: python3 core/server.py   (port 8792)
 """
 import json
 import time
@@ -23,7 +23,7 @@ PORT = 8792
 
 
 class H(BaseHTTPRequestHandler):
-    def log_message(self, *a):
+    def log_message(self, format, *args):
         pass
 
     def _write(self, body, ctype="text/plain; charset=utf-8"):
@@ -49,10 +49,12 @@ class H(BaseHTTPRequestHandler):
         elif u.path == "/search" and q:
             mode = self._qs().get("mode", ["balanced"])[0]
             self._write(json.dumps(engine.search(q, mode=mode)).encode(), "application/json")
-        elif q:
+        elif u.path == "/" and q:
             self._write(engine.recall(q).encode())
         else:
-            self._write(b"")
+            self.send_response(404)
+            self.send_header("Content-Length", "0")
+            self.end_headers()
 
     def do_POST(self):
         qs = self._qs()

@@ -1,20 +1,20 @@
 ---
 entity: Software
-mentions: 8
+mentions: 29
 ---
 
 ## Connections
 
 - [[Simplicity]]
 - [[Niranjan]]
-- [[Website]]
-- [[Trusted]]
-- [[Tagline]]
 - [[Rakshitha]]
 - [[Gopal]]
 - [[Chintu]]
 - [[Chennai]]
 - [[Bhavani]]
+- [[Website]]
+- [[Trusted]]
+- [[Tagline]]
 - [[Academic]]
 
 ## Evidence
@@ -27,3 +27,6 @@ mentions: 8
 
 > I know you deeply, [[Sir]] — [[Niranjan]], the son of [[Gopal]] and [[Bhavani]], brother to [[Rakshitha]], and the proud uncle-brother to [[Chintu]]. You work at UPS in [[Chennai]], yet your heart beats for IONYIQ, your dream venture of “[[Simplicity]] in [[Software]],” already [[Trusted]]
 — [[inbox/2026-08-26.md|open source]]
+
+> ## What it is - IONYIQ is [[Niranjan]]'s freelancing venture — his side hustle alongside his UPS job, and his dream. - [[[[Web]]site]]: www.ionyiq.com - [[Tagline]]: "[[Simplicity]] in [[Software]]" — final year projects, [[Engineering]] excellence, graduate with confidence. - 
+— [[work/ionyiq.md|open source]]

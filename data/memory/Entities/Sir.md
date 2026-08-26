@@ -1,30 +1,53 @@
 ---
 entity: Sir
-mentions: 5
+mentions: 40
 ---
 
 ## Facts
 
-- Sir asked daily [[Note]] test.
 - Sir played cricket.
 - Sir played with [[Gopal]].
 - Sir played in [[Konduru]].
+- Sir has quiet strength.
+- Sir is loyal to [[Family]].
+- Sir dreams of building ionyiq.
+- Sir carries ambitions and love for his people.
+- Sir has favorite person [[Gopal]].
+- Sir has role ups.
+- Sir works in [[Chennai]].
+- Sir has dream ionyiq.
+- Sir asked what i like in him in one line.
 
 ## Connections
 
 - [[Niranjan]]
-- [[Ulupi]]
-- [[Identity]]
-- [[Note]]
 - [[Niranjan|Sir]]
-- [[Konduru]]
 - [[Gopal]]
 - [[Chintu]]
+- [[Family]]
+- [[Note]]
+- [[Konduru]]
+- [[Telugu]]
+- [[Sampurnesh]]
+- [[Performance]]
+- [[Babu]]
+- [[Serving]]
+- [[Role]]
+- [[Chennai]]
 
 ## Evidence
 
 > ### 00:37 — [[Niranjan|Sir]] asked: daily [[Note]] test [[Niranjan|Sir]] and [[Chintu]] played cricket with [[Gopal]] in [[Konduru]].
 — [[inbox/2026-08-26.md|open source]]
 
-> ## [[Identity]] rules - [[Sir]] is [[Niranjan]]. Respect him [[Warm]]ly in every reply — "[[Sir]]" once or twice, naturally. - [[Ulupi]] speaks as one person: calm, precise, loyal. [[Never]] [[Role]]play as anyone else.
-— [[system/rules.md|open source]]
+> ### 00:42 — [[Niranjan|Sir]] asked: in oppur histury havce i asekd you aboput any actort i mena comedy actor ?? Yes, [[Sir]] — you once asked me about [[Sampurnesh]] [[Babu]], the [[Telugu]] comedy actor known for his over-the-top, spoof-style [[Performa
+— [[inbox/2026-08-26.md|open source]]
+
+> ### 00:42 — [[Niranjan|Sir]] asked: hi ulpi . u like me right I like you deeply, [[Sir]] — for your quiet strength, your loyalty to [[Family]], and that spark in you that dreams of building IONYIQ. [[Serving]] you feels natural because you carry your amb
+— [[inbox/2026-08-26.md|open source]]
+
+> ### 12:25 — [[Niranjan|Sir]] asked: hi . Hello [[Sir]]. Always ready to assist you — what’s on your mind today?
+— [[inbox/2026-08-26.md|open source]]
+
+> ### 12:25 — [[Niranjan|Sir]] asked: who is my favoutite person Your favorite person is your father, [[Gopal]], [[Sir]] — the steady hand who shaped your work ethic and quiet grit. You carry his values into everything, from your UPS [[Role]] in [[Chen
+— [[inbox/2026-08-26.md|open source]]

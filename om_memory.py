@@ -175,9 +175,7 @@ def add(fname, text):
 
 def seed():
     seed_files = {
-        "people/arun.md": "Arun works at IONYIQ. Arun prefers voice commands over typing.\n\nArun's birthday is March 12.",
-        "people/priya.md": "Priya is a designer. Priya recommended Figma for all mockups.",
-        "work/chilaka.md": "Chilaka is an Apple Shortcut project by Arun. Chilaka calls the memOTry server.",
+        "people/niranjan.md": "Niranjan works at IONYIQ as an Associate Full Stack Developer.",
     }
     for name, txt in seed_files.items():
         p = STORE / name
@@ -190,10 +188,10 @@ def seed():
 def demo():
     seed()
     for mode in ("balanced", "graph_first"):
-        print(f"\n== search 'who does chilaka belong to' [{mode}] ==")
-        for r in search("who does chilaka belong to", mode=mode, limit=3):
+        print(f"\n== search 'where does niranjan work' [{mode}] ==")
+        for r in search("where does niranjan work", mode=mode, limit=3):
             print(f"  {r['score']}  {r['path']}  {r['signals']}\n    {r['text'][:80]}")
-    assert any("chilaka" in r["path"] for r in search("chilaka owner arun")), "hybrid search failed"
+    assert any("ionyiq" in r["path"] or "niranjan" in r["path"] for r in search("niranjan work")), "hybrid search failed"
     print("\nOK")
 
 

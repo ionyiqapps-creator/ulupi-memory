@@ -1,6 +1,6 @@
 ---
 entity: Note
-mentions: 4
+mentions: 13
 ---
 
 ## Connections
@@ -11,8 +11,12 @@ mentions: 4
 - [[Konduru]]
 - [[Gopal]]
 - [[Chintu]]
+- [[Guard]]
 
 ## Evidence
+
+> Demo dupe [[Guard]] [[Note]] for testing.
+— [[inbox/_demo_dupe.md|open source]]
 
 > ### 00:37 — [[Niranjan|Sir]] asked: daily [[Note]] test [[Niranjan|Sir]] and [[Chintu]] played cricket with [[Gopal]] in [[Konduru]].
 — [[inbox/2026-08-26.md|open source]]

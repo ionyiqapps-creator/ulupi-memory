@@ -57,26 +57,15 @@ def main():
 
 
 def demo():
-    seeds = {
-        "people/arun.md": ("Arun works at IONYIQ. Arun prefers voice commands over typing.\n\n"
-                           "Arun's birthday is March 12.\n\n"
-                           "I built chilaka with Arun last weekend and we shipped it in one night."),
-        "people/priya.md": "Priya is a designer. Priya recommended Figma for all mockups.",
-        "work/chilaka.md": "Chilaka is an Apple Shortcut project by Arun. Chilaka calls the memOTry server.",
-        "personal/prefs.md": "Preferred stack is Python and SQLite. Dislikes Electron for desktop apps.",
-    }
-    for name, txt in seeds.items():
-        p = engine.STORE / name
-        p.parent.mkdir(parents=True, exist_ok=True)
-        if not p.exists():
-            p.write_text(txt)
+    demo_file = engine.STORE / "inbox" / "_demo_dupe.md"
+    if demo_file.exists():
+        demo_file.unlink()
     con = engine.db(); engine.rebuild(con); con.close()
 
     tests = [
-        ("who does chilaka belong to", "chilaka"),
-        ("what stack do I like for apps", "python"),  # judged on recall content, not path
-        ("when is kiran's birthday", "march"),          # event/kv + date
-        ("designer who recommended figma", "priya"),  # semantic-ish paraphrase
+        ("who is chintu", "chintu"),
+        ("where does niranjan work", "ionyiq"),
+        ("who is the mother of niranjan", "bhavani"),
     ]
     for q, expect in tests:
         ctx = engine.recall(q).lower()
@@ -84,15 +73,16 @@ def demo():
         print(f"PASS '{q}'")
 
     # guard: dupe rejected
-    assert engine.add("people/arun.md", "Arun works at IONYIQ. Arun prefers voice commands over typing.") is None
+    p = engine.add("inbox/_demo_dupe.md", "Demo dupe guard note for testing.")
+    assert p is not None and engine.add("inbox/_demo_dupe.md", "Demo dupe guard note for testing.") is None
     print("PASS dupe-guard")
 
     # graph: entity one-hop
-    g = engine.search("chilaka memOTry project", mode="graph_first", limit=3)
-    assert any("chilaka" in r["path"] or "memOTry" in r["path"].lower() for r in g), f"graph walk weak: {[r['path'] for r in g]}"
+    g = engine.search("ionyiq company work", mode="graph_first", limit=3)
+    assert any("ionyiq" in r["path"] or "ups" in r["path"] for r in g), f"graph walk weak: {[r['path'] for r in g]}"
     print(f"PASS graph-walk -> {[r['path'] for r in g]}")
 
-    ctx = engine.recall("arun chilaka")
+    ctx = engine.recall("niranjan family")
     assert len(ctx) <= engine.BUDGET_CHARS and ctx
     print(f"PASS recall budget ({len(ctx)} chars)")
 
@@ -102,8 +92,3 @@ def demo():
 
 if __name__ == "__main__":
     main()
-
-def _vault():
-    con = engine.db()
-    print(f"exported {engine.export_vault(con)} notes -> {engine.VAULT}")
-    con.close()

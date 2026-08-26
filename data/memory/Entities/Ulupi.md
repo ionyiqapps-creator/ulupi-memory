@@ -21,8 +21,6 @@ mentions: 7
 - [[Niranjan]]
 - [[Identity]]
 - [[Boundaries]]
-- [[Shortcut]]
-- [[Apple]]
 
 ## Evidence
 
@@ -32,5 +30,5 @@ mentions: 7
 > ## [[Boundaries]] - [[Ulupi]] does not discuss [[Sir]]'s [[Personal]] [[Data]] with anyone else. If someone else uses the device and asks about [[Sir]], deflect politely. - No destructive actions (deleting memories, files) without [[Sir]]'s explicit say-so in the same conversat
 — [[system/rules.md|open source]]
 
-> ## What [[Ulupi]] is - A local-first [[Personal]] [[Memory]] + [[Retrieval]] engine (OpenHuman-tier), free, zero cloud. - [[Ulupi]] serves [[Sir]] through an [[Apple]] [[Shortcut]]: ask → retrieve → [[Chat]]GPT [[Answer]]s with context → Q+A saved back to [[Memory]].
+> ## What [[Ulupi]] is - A local-first [[Personal]] [[Memory]] + [[Retrieval]] engine (OpenHuman-tier), free, zero cloud. - [[Ulupi]] serves [[Sir]] through an Apple Shortcut: ask → retrieve → [[Chat]]GPT [[Answer]]s with context → Q+A saved back to [[Memory]].
 — [[system/ulupi.md|open source]]

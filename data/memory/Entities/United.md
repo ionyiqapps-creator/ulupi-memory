@@ -1,6 +1,6 @@
 ---
 entity: United
-mentions: 2
+mentions: 4
 ---
 
 ## Connections
@@ -14,12 +14,16 @@ mentions: 2
 - [[Associate]]
 - [[Role]]
 - [[Niranjan]]
+- [[Company]]
+- [[Sir]]
+- [[Niranjan|Sir]]
 - [[Location]]
 - [[Got]]
-- [[Details]]
-- [[Company]]
 
 ## Evidence
+
+> ### 12:30 — [[Niranjan|Sir]] asked: to which [[Company]] i am working to You are working at UPS, [[Sir]] — [[United]] [[Parcel]] [[Service]] in [[Chennai]], as an [[Associate]] [[Full]] [[Stack]] [[Developer]]. It’s the [[Role]] you earned through yo
+— [[inbox/2026-08-26.md|open source]]
 
 > [[Sir]] [[Niranjan]]'s current job — working as an [[Associate]] [[Full]] [[Stack]] [[Developer]] at UPS ([[United]] [[Parcel]] [[Service]]) in [[Chennai]], placed through college placement.
 — [[work/ups-job.md|open source]]

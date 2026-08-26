@@ -1,10 +1,11 @@
 ---
 entity: Python
-mentions: 1
+mentions: 3
 ---
 
 ## Connections
 
+- [[Electron]]
 - [[Wired]]
 - [[Tree]]
 - [[Studied]]

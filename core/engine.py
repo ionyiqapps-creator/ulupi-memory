@@ -236,6 +236,17 @@ def rebuild(con):
         if md.parts[-2] == "Entities" or md.name == "Brain.md":
             continue  # vault mirror notes are not memories
         n += index_file(con, md)
+    # drop chunks whose source file was deleted
+    live = {str(md.relative_to(STORE)) for md in STORE.rglob("*.md")
+            if md.parts[-2] != "Entities" and md.name != "Brain.md"}
+    gone = [r["id"] for r in con.execute("SELECT id, path FROM chunks") if r["path"] not in live]
+    for cid in gone:
+        con.execute("DELETE FROM fts WHERE rowid=?", (cid,))
+        con.execute("DELETE FROM chunks WHERE id=?", (cid,))
+    if gone:
+        con.execute("DELETE FROM entities WHERE name NOT IN "
+                    "(SELECT json_each.value FROM chunks, json_each(chunks.entities))")
+        con.commit()
     return n
 
 
@@ -550,7 +561,7 @@ def search(query, mode="balanced", limit=8, kind=None, path_prefix=None):
         vec, gr = {}, s_graph(con, ents)
         w = dict(w, vec=0.0)
     else:
-        vec = s_vector(con, embed(query), ids=set(kw) or None)
+        vec = s_vector(con, embed(query))
         gr = s_graph(con, ents)
     fr = s_fresh(con)
 

@@ -1,6 +1,6 @@
 ---
 entity: Vidhyanagar
-mentions: 6
+mentions: 20
 ---
 
 ## Connections

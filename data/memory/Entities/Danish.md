@@ -1,6 +1,6 @@
 ---
 entity: Danish
-mentions: 4
+mentions: 11
 ---
 
 ## Connections

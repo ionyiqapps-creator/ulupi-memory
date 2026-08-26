@@ -1,6 +1,6 @@
 ---
 entity: University
-mentions: 6
+mentions: 13
 ---
 
 ## Connections
